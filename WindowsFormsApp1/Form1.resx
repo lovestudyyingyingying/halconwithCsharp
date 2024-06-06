@@ -1,0 +1,726 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="uibtnTest.Font" type="System.Drawing.Font, System.Drawing">
+    <value>宋体, 12pt</value>
+  </data>
+  <data name="uibtnTest.Location" type="System.Drawing.Point, System.Drawing">
+    <value>5, 38</value>
+  </data>
+  <data name="uibtnTest.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>1, 1</value>
+  </data>
+  <data name="uibtnTest.Size" type="System.Drawing.Size, System.Drawing">
+    <value>100, 35</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="uibtnTest.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="uibtnTest.Text" xml:space="preserve">
+    <value>读图</value>
+  </data>
+  <data name="&gt;&gt;uibtnTest.Name" xml:space="preserve">
+    <value>uibtnTest</value>
+  </data>
+  <data name="&gt;&gt;uibtnTest.Type" xml:space="preserve">
+    <value>Sunny.UI.UIButton, SunnyUI, Version=3.6.6.0, Culture=neutral, PublicKeyToken=27d7d2e821d97aeb</value>
+  </data>
+  <data name="&gt;&gt;uibtnTest.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;uibtnTest.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="btnBinarization.Font" type="System.Drawing.Font, System.Drawing">
+    <value>宋体, 12pt</value>
+  </data>
+  <data name="btnBinarization.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 35</value>
+  </data>
+  <data name="btnBinarization.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>1, 1</value>
+  </data>
+  <data name="btnBinarization.Size" type="System.Drawing.Size, System.Drawing">
+    <value>100, 35</value>
+  </data>
+  <data name="btnBinarization.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="btnBinarization.Text" xml:space="preserve">
+    <value>二值化图像</value>
+  </data>
+  <data name="&gt;&gt;btnBinarization.Name" xml:space="preserve">
+    <value>btnBinarization</value>
+  </data>
+  <data name="&gt;&gt;btnBinarization.Type" xml:space="preserve">
+    <value>Sunny.UI.UIButton, SunnyUI, Version=3.6.6.0, Culture=neutral, PublicKeyToken=27d7d2e821d97aeb</value>
+  </data>
+  <data name="&gt;&gt;btnBinarization.Parent" xml:space="preserve">
+    <value>uiGroupBox1</value>
+  </data>
+  <data name="&gt;&gt;btnBinarization.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="btnFitWindow.Font" type="System.Drawing.Font, System.Drawing">
+    <value>宋体, 12pt</value>
+  </data>
+  <data name="btnFitWindow.Location" type="System.Drawing.Point, System.Drawing">
+    <value>125, 38</value>
+  </data>
+  <data name="btnFitWindow.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>1, 1</value>
+  </data>
+  <data name="btnFitWindow.Size" type="System.Drawing.Size, System.Drawing">
+    <value>100, 35</value>
+  </data>
+  <data name="btnFitWindow.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="btnFitWindow.Text" xml:space="preserve">
+    <value>适应窗口</value>
+  </data>
+  <data name="&gt;&gt;btnFitWindow.Name" xml:space="preserve">
+    <value>btnFitWindow</value>
+  </data>
+  <data name="&gt;&gt;btnFitWindow.Type" xml:space="preserve">
+    <value>Sunny.UI.UIButton, SunnyUI, Version=3.6.6.0, Culture=neutral, PublicKeyToken=27d7d2e821d97aeb</value>
+  </data>
+  <data name="&gt;&gt;btnFitWindow.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;btnFitWindow.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="btnDrawRoi.Font" type="System.Drawing.Font, System.Drawing">
+    <value>宋体, 12pt</value>
+  </data>
+  <data name="btnDrawRoi.Location" type="System.Drawing.Point, System.Drawing">
+    <value>246, 39</value>
+  </data>
+  <data name="btnDrawRoi.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>1, 1</value>
+  </data>
+  <data name="btnDrawRoi.Size" type="System.Drawing.Size, System.Drawing">
+    <value>100, 35</value>
+  </data>
+  <data name="btnDrawRoi.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="btnDrawRoi.Text" xml:space="preserve">
+    <value>绘制ROI</value>
+  </data>
+  <data name="&gt;&gt;btnDrawRoi.Name" xml:space="preserve">
+    <value>btnDrawRoi</value>
+  </data>
+  <data name="&gt;&gt;btnDrawRoi.Type" xml:space="preserve">
+    <value>Sunny.UI.UIButton, SunnyUI, Version=3.6.6.0, Culture=neutral, PublicKeyToken=27d7d2e821d97aeb</value>
+  </data>
+  <data name="&gt;&gt;btnDrawRoi.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;btnDrawRoi.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="btnCreateModel.Font" type="System.Drawing.Font, System.Drawing">
+    <value>宋体, 12pt</value>
+  </data>
+  <data name="btnCreateModel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>802, 267</value>
+  </data>
+  <data name="btnCreateModel.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>1, 1</value>
+  </data>
+  <data name="btnCreateModel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>100, 35</value>
+  </data>
+  <data name="btnCreateModel.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="btnCreateModel.Text" xml:space="preserve">
+    <value>创建模板</value>
+  </data>
+  <data name="&gt;&gt;btnCreateModel.Name" xml:space="preserve">
+    <value>btnCreateModel</value>
+  </data>
+  <data name="&gt;&gt;btnCreateModel.Type" xml:space="preserve">
+    <value>Sunny.UI.UIButton, SunnyUI, Version=3.6.6.0, Culture=neutral, PublicKeyToken=27d7d2e821d97aeb</value>
+  </data>
+  <data name="&gt;&gt;btnCreateModel.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;btnCreateModel.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="btnFindModel.Font" type="System.Drawing.Font, System.Drawing">
+    <value>宋体, 12pt</value>
+  </data>
+  <data name="btnFindModel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>917, 267</value>
+  </data>
+  <data name="btnFindModel.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>1, 1</value>
+  </data>
+  <data name="btnFindModel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>100, 35</value>
+  </data>
+  <data name="btnFindModel.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="btnFindModel.Text" xml:space="preserve">
+    <value>模板匹配</value>
+  </data>
+  <data name="&gt;&gt;btnFindModel.Name" xml:space="preserve">
+    <value>btnFindModel</value>
+  </data>
+  <data name="&gt;&gt;btnFindModel.Type" xml:space="preserve">
+    <value>Sunny.UI.UIButton, SunnyUI, Version=3.6.6.0, Culture=neutral, PublicKeyToken=27d7d2e821d97aeb</value>
+  </data>
+  <data name="&gt;&gt;btnFindModel.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;btnFindModel.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="btndymicBinarization.Font" type="System.Drawing.Font, System.Drawing">
+    <value>宋体, 12pt</value>
+  </data>
+  <data name="btndymicBinarization.Location" type="System.Drawing.Point, System.Drawing">
+    <value>114, 35</value>
+  </data>
+  <data name="btndymicBinarization.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>1, 1</value>
+  </data>
+  <data name="btndymicBinarization.Size" type="System.Drawing.Size, System.Drawing">
+    <value>100, 35</value>
+  </data>
+  <data name="btndymicBinarization.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="btndymicBinarization.Text" xml:space="preserve">
+    <value>动态二值化</value>
+  </data>
+  <data name="&gt;&gt;btndymicBinarization.Name" xml:space="preserve">
+    <value>btndymicBinarization</value>
+  </data>
+  <data name="&gt;&gt;btndymicBinarization.Type" xml:space="preserve">
+    <value>Sunny.UI.UIButton, SunnyUI, Version=3.6.6.0, Culture=neutral, PublicKeyToken=27d7d2e821d97aeb</value>
+  </data>
+  <data name="&gt;&gt;btndymicBinarization.Parent" xml:space="preserve">
+    <value>uiGroupBox1</value>
+  </data>
+  <data name="&gt;&gt;btndymicBinarization.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="btnSaveModel.Font" type="System.Drawing.Font, System.Drawing">
+    <value>宋体, 12pt</value>
+  </data>
+  <data name="btnSaveModel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>802, 320</value>
+  </data>
+  <data name="btnSaveModel.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>1, 1</value>
+  </data>
+  <data name="btnSaveModel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>100, 35</value>
+  </data>
+  <data name="btnSaveModel.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="btnSaveModel.Text" xml:space="preserve">
+    <value>保存模板</value>
+  </data>
+  <data name="&gt;&gt;btnSaveModel.Name" xml:space="preserve">
+    <value>btnSaveModel</value>
+  </data>
+  <data name="&gt;&gt;btnSaveModel.Type" xml:space="preserve">
+    <value>Sunny.UI.UIButton, SunnyUI, Version=3.6.6.0, Culture=neutral, PublicKeyToken=27d7d2e821d97aeb</value>
+  </data>
+  <data name="&gt;&gt;btnSaveModel.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;btnSaveModel.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="uiButton1.Font" type="System.Drawing.Font, System.Drawing">
+    <value>宋体, 12pt</value>
+  </data>
+  <data name="uiButton1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>917, 320</value>
+  </data>
+  <data name="uiButton1.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>1, 1</value>
+  </data>
+  <data name="uiButton1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>100, 35</value>
+  </data>
+  <data name="uiButton1.TabIndex" type="System.Int32, mscorlib">
+    <value>11</value>
+  </data>
+  <data name="uiButton1.Text" xml:space="preserve">
+    <value>创建找圆工具</value>
+  </data>
+  <data name="&gt;&gt;uiButton1.Name" xml:space="preserve">
+    <value>uiButton1</value>
+  </data>
+  <data name="&gt;&gt;uiButton1.Type" xml:space="preserve">
+    <value>Sunny.UI.UIButton, SunnyUI, Version=3.6.6.0, Culture=neutral, PublicKeyToken=27d7d2e821d97aeb</value>
+  </data>
+  <data name="&gt;&gt;uiButton1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;uiButton1.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="uiButton2.Font" type="System.Drawing.Font, System.Drawing">
+    <value>宋体, 12pt</value>
+  </data>
+  <data name="uiButton2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>115, 76</value>
+  </data>
+  <data name="uiButton2.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>1, 1</value>
+  </data>
+  <data name="uiButton2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>100, 35</value>
+  </data>
+  <data name="uiButton2.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="uiButton2.Text" xml:space="preserve">
+    <value>图像增强</value>
+  </data>
+  <data name="&gt;&gt;uiButton2.Name" xml:space="preserve">
+    <value>uiButton2</value>
+  </data>
+  <data name="&gt;&gt;uiButton2.Type" xml:space="preserve">
+    <value>Sunny.UI.UIButton, SunnyUI, Version=3.6.6.0, Culture=neutral, PublicKeyToken=27d7d2e821d97aeb</value>
+  </data>
+  <data name="&gt;&gt;uiButton2.Parent" xml:space="preserve">
+    <value>uiGroupBox1</value>
+  </data>
+  <data name="&gt;&gt;uiButton2.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="btnequ_histo.Font" type="System.Drawing.Font, System.Drawing">
+    <value>宋体, 12pt</value>
+  </data>
+  <data name="btnequ_histo.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 76</value>
+  </data>
+  <data name="btnequ_histo.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>1, 1</value>
+  </data>
+  <data name="btnequ_histo.Size" type="System.Drawing.Size, System.Drawing">
+    <value>100, 35</value>
+  </data>
+  <data name="btnequ_histo.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="btnequ_histo.Text" xml:space="preserve">
+    <value>直方图均衡化</value>
+  </data>
+  <data name="&gt;&gt;btnequ_histo.Name" xml:space="preserve">
+    <value>btnequ_histo</value>
+  </data>
+  <data name="&gt;&gt;btnequ_histo.Type" xml:space="preserve">
+    <value>Sunny.UI.UIButton, SunnyUI, Version=3.6.6.0, Culture=neutral, PublicKeyToken=27d7d2e821d97aeb</value>
+  </data>
+  <data name="&gt;&gt;btnequ_histo.Parent" xml:space="preserve">
+    <value>uiGroupBox1</value>
+  </data>
+  <data name="&gt;&gt;btnequ_histo.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="uiGroupBox1.Font" type="System.Drawing.Font, System.Drawing">
+    <value>宋体, 12pt</value>
+  </data>
+  <data name="uiGroupBox1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>803, 79</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="uiGroupBox1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 5, 4, 5</value>
+  </data>
+  <data name="uiGroupBox1.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>1, 1</value>
+  </data>
+  <data name="uiGroupBox1.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 32, 0, 0</value>
+  </data>
+  <data name="uiGroupBox1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>270, 180</value>
+  </data>
+  <data name="uiGroupBox1.TabIndex" type="System.Int32, mscorlib">
+    <value>12</value>
+  </data>
+  <data name="uiGroupBox1.Text" xml:space="preserve">
+    <value>图像预处理</value>
+  </data>
+  <data name="&gt;&gt;uiGroupBox1.Name" xml:space="preserve">
+    <value>uiGroupBox1</value>
+  </data>
+  <data name="&gt;&gt;uiGroupBox1.Type" xml:space="preserve">
+    <value>Sunny.UI.UIGroupBox, SunnyUI, Version=3.6.6.0, Culture=neutral, PublicKeyToken=27d7d2e821d97aeb</value>
+  </data>
+  <data name="&gt;&gt;uiGroupBox1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;uiGroupBox1.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="btnFindCircle.Font" type="System.Drawing.Font, System.Drawing">
+    <value>宋体, 12pt</value>
+  </data>
+  <data name="btnFindCircle.Location" type="System.Drawing.Point, System.Drawing">
+    <value>917, 373</value>
+  </data>
+  <data name="btnFindCircle.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>1, 1</value>
+  </data>
+  <data name="btnFindCircle.Size" type="System.Drawing.Size, System.Drawing">
+    <value>100, 35</value>
+  </data>
+  <data name="btnFindCircle.TabIndex" type="System.Int32, mscorlib">
+    <value>13</value>
+  </data>
+  <data name="btnFindCircle.Text" xml:space="preserve">
+    <value>圆查找</value>
+  </data>
+  <data name="&gt;&gt;btnFindCircle.Name" xml:space="preserve">
+    <value>btnFindCircle</value>
+  </data>
+  <data name="&gt;&gt;btnFindCircle.Type" xml:space="preserve">
+    <value>Sunny.UI.UIButton, SunnyUI, Version=3.6.6.0, Culture=neutral, PublicKeyToken=27d7d2e821d97aeb</value>
+  </data>
+  <data name="&gt;&gt;btnFindCircle.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;btnFindCircle.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="btnMeasLine.Font" type="System.Drawing.Font, System.Drawing">
+    <value>宋体, 12pt</value>
+  </data>
+  <data name="btnMeasLine.Location" type="System.Drawing.Point, System.Drawing">
+    <value>802, 373</value>
+  </data>
+  <data name="btnMeasLine.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>1, 1</value>
+  </data>
+  <data name="btnMeasLine.Size" type="System.Drawing.Size, System.Drawing">
+    <value>100, 35</value>
+  </data>
+  <data name="btnMeasLine.TabIndex" type="System.Int32, mscorlib">
+    <value>14</value>
+  </data>
+  <data name="btnMeasLine.Text" xml:space="preserve">
+    <value>直线查找</value>
+  </data>
+  <data name="&gt;&gt;btnMeasLine.Name" xml:space="preserve">
+    <value>btnMeasLine</value>
+  </data>
+  <data name="&gt;&gt;btnMeasLine.Type" xml:space="preserve">
+    <value>Sunny.UI.UIButton, SunnyUI, Version=3.6.6.0, Culture=neutral, PublicKeyToken=27d7d2e821d97aeb</value>
+  </data>
+  <data name="&gt;&gt;btnMeasLine.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;btnMeasLine.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="uiButton4.Font" type="System.Drawing.Font, System.Drawing">
+    <value>宋体, 12pt</value>
+  </data>
+  <data name="uiButton4.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 76</value>
+  </data>
+  <data name="uiButton4.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>1, 1</value>
+  </data>
+  <data name="uiButton4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>100, 35</value>
+  </data>
+  <data name="uiButton4.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="uiButton4.Text" xml:space="preserve">
+    <value>旋转</value>
+  </data>
+  <data name="&gt;&gt;uiButton4.Name" xml:space="preserve">
+    <value>uiButton4</value>
+  </data>
+  <data name="&gt;&gt;uiButton4.Type" xml:space="preserve">
+    <value>Sunny.UI.UIButton, SunnyUI, Version=3.6.6.0, Culture=neutral, PublicKeyToken=27d7d2e821d97aeb</value>
+  </data>
+  <data name="&gt;&gt;uiButton4.Parent" xml:space="preserve">
+    <value>uiGroupBox2</value>
+  </data>
+  <data name="&gt;&gt;uiButton4.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="uiButton5.Font" type="System.Drawing.Font, System.Drawing">
+    <value>宋体, 12pt</value>
+  </data>
+  <data name="uiButton5.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 35</value>
+  </data>
+  <data name="uiButton5.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>1, 1</value>
+  </data>
+  <data name="uiButton5.Size" type="System.Drawing.Size, System.Drawing">
+    <value>100, 35</value>
+  </data>
+  <data name="uiButton5.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="uiButton5.Text" xml:space="preserve">
+    <value>生成矩形</value>
+  </data>
+  <data name="&gt;&gt;uiButton5.Name" xml:space="preserve">
+    <value>uiButton5</value>
+  </data>
+  <data name="&gt;&gt;uiButton5.Type" xml:space="preserve">
+    <value>Sunny.UI.UIButton, SunnyUI, Version=3.6.6.0, Culture=neutral, PublicKeyToken=27d7d2e821d97aeb</value>
+  </data>
+  <data name="&gt;&gt;uiButton5.Parent" xml:space="preserve">
+    <value>uiGroupBox2</value>
+  </data>
+  <data name="&gt;&gt;uiButton5.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="uiButton6.Font" type="System.Drawing.Font, System.Drawing">
+    <value>宋体, 12pt</value>
+  </data>
+  <data name="uiButton6.Location" type="System.Drawing.Point, System.Drawing">
+    <value>114, 35</value>
+  </data>
+  <data name="uiButton6.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>1, 1</value>
+  </data>
+  <data name="uiButton6.Size" type="System.Drawing.Size, System.Drawing">
+    <value>100, 35</value>
+  </data>
+  <data name="uiButton6.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="uiButton6.Text" xml:space="preserve">
+    <value>平移</value>
+  </data>
+  <data name="&gt;&gt;uiButton6.Name" xml:space="preserve">
+    <value>uiButton6</value>
+  </data>
+  <data name="&gt;&gt;uiButton6.Type" xml:space="preserve">
+    <value>Sunny.UI.UIButton, SunnyUI, Version=3.6.6.0, Culture=neutral, PublicKeyToken=27d7d2e821d97aeb</value>
+  </data>
+  <data name="&gt;&gt;uiButton6.Parent" xml:space="preserve">
+    <value>uiGroupBox2</value>
+  </data>
+  <data name="&gt;&gt;uiButton6.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="uiGroupBox2.Font" type="System.Drawing.Font, System.Drawing">
+    <value>宋体, 12pt</value>
+  </data>
+  <data name="uiGroupBox2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>802, 416</value>
+  </data>
+  <data name="uiGroupBox2.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 5, 4, 5</value>
+  </data>
+  <data name="uiGroupBox2.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>1, 1</value>
+  </data>
+  <data name="uiGroupBox2.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 32, 0, 0</value>
+  </data>
+  <data name="uiGroupBox2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>270, 180</value>
+  </data>
+  <data name="uiGroupBox2.TabIndex" type="System.Int32, mscorlib">
+    <value>13</value>
+  </data>
+  <data name="uiGroupBox2.Text" xml:space="preserve">
+    <value>仿射变换</value>
+  </data>
+  <data name="&gt;&gt;uiGroupBox2.Name" xml:space="preserve">
+    <value>uiGroupBox2</value>
+  </data>
+  <data name="&gt;&gt;uiGroupBox2.Type" xml:space="preserve">
+    <value>Sunny.UI.UIGroupBox, SunnyUI, Version=3.6.6.0, Culture=neutral, PublicKeyToken=27d7d2e821d97aeb</value>
+  </data>
+  <data name="&gt;&gt;uiGroupBox2.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;uiGroupBox2.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="imageContorl1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 78</value>
+  </data>
+  <data name="imageContorl1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
+  </data>
+  <data name="imageContorl1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>794, 518</value>
+  </data>
+  <data name="imageContorl1.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;imageContorl1.Name" xml:space="preserve">
+    <value>imageContorl1</value>
+  </data>
+  <data name="&gt;&gt;imageContorl1.Type" xml:space="preserve">
+    <value>WindowsFormsApp1.ImageContorl, WindowsFormsApp1, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;imageContorl1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;imageContorl1.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>1081, 634</value>
+  </data>
+  <data name="$this.Font" type="System.Drawing.Font, System.Drawing">
+    <value>宋体, 9pt</value>
+  </data>
+  <data name="$this.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="$this.MaximumSize" type="System.Drawing.Size, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
+    <value>WindowsDefaultLocation</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>halcon学习</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>Form1</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>Sunny.UI.UIForm, SunnyUI, Version=3.6.6.0, Culture=neutral, PublicKeyToken=27d7d2e821d97aeb</value>
+  </data>
+</root>
