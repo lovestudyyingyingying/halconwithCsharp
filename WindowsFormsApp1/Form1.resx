@@ -147,37 +147,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;uibtnTest.ZOrder" xml:space="preserve">
-    <value>11</value>
-  </data>
-  <data name="btnBinarization.Font" type="System.Drawing.Font, System.Drawing">
-    <value>宋体, 12pt</value>
-  </data>
-  <data name="btnBinarization.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 35</value>
-  </data>
-  <data name="btnBinarization.MinimumSize" type="System.Drawing.Size, System.Drawing">
-    <value>1, 1</value>
-  </data>
-  <data name="btnBinarization.Size" type="System.Drawing.Size, System.Drawing">
-    <value>100, 35</value>
-  </data>
-  <data name="btnBinarization.TabIndex" type="System.Int32, mscorlib">
-    <value>3</value>
-  </data>
-  <data name="btnBinarization.Text" xml:space="preserve">
-    <value>二值化图像</value>
-  </data>
-  <data name="&gt;&gt;btnBinarization.Name" xml:space="preserve">
-    <value>btnBinarization</value>
-  </data>
-  <data name="&gt;&gt;btnBinarization.Type" xml:space="preserve">
-    <value>Sunny.UI.UIButton, SunnyUI, Version=3.6.6.0, Culture=neutral, PublicKeyToken=27d7d2e821d97aeb</value>
-  </data>
-  <data name="&gt;&gt;btnBinarization.Parent" xml:space="preserve">
-    <value>uiGroupBox1</value>
-  </data>
-  <data name="&gt;&gt;btnBinarization.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>10</value>
   </data>
   <data name="btnFitWindow.Font" type="System.Drawing.Font, System.Drawing">
     <value>宋体, 12pt</value>
@@ -207,7 +177,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;btnFitWindow.ZOrder" xml:space="preserve">
-    <value>9</value>
+    <value>8</value>
   </data>
   <data name="btnDrawRoi.Font" type="System.Drawing.Font, System.Drawing">
     <value>宋体, 12pt</value>
@@ -237,13 +207,13 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;btnDrawRoi.ZOrder" xml:space="preserve">
-    <value>8</value>
+    <value>7</value>
   </data>
   <data name="btnCreateModel.Font" type="System.Drawing.Font, System.Drawing">
     <value>宋体, 12pt</value>
   </data>
   <data name="btnCreateModel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>802, 267</value>
+    <value>802, 332</value>
   </data>
   <data name="btnCreateModel.MinimumSize" type="System.Drawing.Size, System.Drawing">
     <value>1, 1</value>
@@ -267,13 +237,13 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;btnCreateModel.ZOrder" xml:space="preserve">
-    <value>7</value>
+    <value>6</value>
   </data>
   <data name="btnFindModel.Font" type="System.Drawing.Font, System.Drawing">
     <value>宋体, 12pt</value>
   </data>
   <data name="btnFindModel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>917, 267</value>
+    <value>908, 332</value>
   </data>
   <data name="btnFindModel.MinimumSize" type="System.Drawing.Size, System.Drawing">
     <value>1, 1</value>
@@ -297,43 +267,13 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;btnFindModel.ZOrder" xml:space="preserve">
-    <value>6</value>
-  </data>
-  <data name="btndymicBinarization.Font" type="System.Drawing.Font, System.Drawing">
-    <value>宋体, 12pt</value>
-  </data>
-  <data name="btndymicBinarization.Location" type="System.Drawing.Point, System.Drawing">
-    <value>114, 35</value>
-  </data>
-  <data name="btndymicBinarization.MinimumSize" type="System.Drawing.Size, System.Drawing">
-    <value>1, 1</value>
-  </data>
-  <data name="btndymicBinarization.Size" type="System.Drawing.Size, System.Drawing">
-    <value>100, 35</value>
-  </data>
-  <data name="btndymicBinarization.TabIndex" type="System.Int32, mscorlib">
-    <value>8</value>
-  </data>
-  <data name="btndymicBinarization.Text" xml:space="preserve">
-    <value>动态二值化</value>
-  </data>
-  <data name="&gt;&gt;btndymicBinarization.Name" xml:space="preserve">
-    <value>btndymicBinarization</value>
-  </data>
-  <data name="&gt;&gt;btndymicBinarization.Type" xml:space="preserve">
-    <value>Sunny.UI.UIButton, SunnyUI, Version=3.6.6.0, Culture=neutral, PublicKeyToken=27d7d2e821d97aeb</value>
-  </data>
-  <data name="&gt;&gt;btndymicBinarization.Parent" xml:space="preserve">
-    <value>uiGroupBox1</value>
-  </data>
-  <data name="&gt;&gt;btndymicBinarization.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>5</value>
   </data>
   <data name="btnSaveModel.Font" type="System.Drawing.Font, System.Drawing">
     <value>宋体, 12pt</value>
   </data>
   <data name="btnSaveModel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>802, 320</value>
+    <value>802, 373</value>
   </data>
   <data name="btnSaveModel.MinimumSize" type="System.Drawing.Size, System.Drawing">
     <value>1, 1</value>
@@ -357,73 +297,194 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;btnSaveModel.ZOrder" xml:space="preserve">
-    <value>5</value>
-  </data>
-  <data name="uiButton1.Font" type="System.Drawing.Font, System.Drawing">
-    <value>宋体, 12pt</value>
-  </data>
-  <data name="uiButton1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>917, 320</value>
-  </data>
-  <data name="uiButton1.MinimumSize" type="System.Drawing.Size, System.Drawing">
-    <value>1, 1</value>
-  </data>
-  <data name="uiButton1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>100, 35</value>
-  </data>
-  <data name="uiButton1.TabIndex" type="System.Int32, mscorlib">
-    <value>11</value>
-  </data>
-  <data name="uiButton1.Text" xml:space="preserve">
-    <value>创建找圆工具</value>
-  </data>
-  <data name="&gt;&gt;uiButton1.Name" xml:space="preserve">
-    <value>uiButton1</value>
-  </data>
-  <data name="&gt;&gt;uiButton1.Type" xml:space="preserve">
-    <value>Sunny.UI.UIButton, SunnyUI, Version=3.6.6.0, Culture=neutral, PublicKeyToken=27d7d2e821d97aeb</value>
-  </data>
-  <data name="&gt;&gt;uiButton1.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;uiButton1.ZOrder" xml:space="preserve">
     <value>4</value>
   </data>
-  <data name="uiButton2.Font" type="System.Drawing.Font, System.Drawing">
+  <data name="btnMeanImage.Font" type="System.Drawing.Font, System.Drawing">
     <value>宋体, 12pt</value>
   </data>
-  <data name="uiButton2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>115, 76</value>
+  <data name="btnMeanImage.Location" type="System.Drawing.Point, System.Drawing">
+    <value>5, 84</value>
   </data>
-  <data name="uiButton2.MinimumSize" type="System.Drawing.Size, System.Drawing">
+  <data name="btnMeanImage.MinimumSize" type="System.Drawing.Size, System.Drawing">
     <value>1, 1</value>
   </data>
-  <data name="uiButton2.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="btnMeanImage.Size" type="System.Drawing.Size, System.Drawing">
     <value>100, 35</value>
   </data>
-  <data name="uiButton2.TabIndex" type="System.Int32, mscorlib">
-    <value>10</value>
+  <data name="btnMeanImage.TabIndex" type="System.Int32, mscorlib">
+    <value>26</value>
   </data>
-  <data name="uiButton2.Text" xml:space="preserve">
-    <value>图像增强</value>
+  <data name="btnMeanImage.Text" xml:space="preserve">
+    <value>均值滤波</value>
   </data>
-  <data name="&gt;&gt;uiButton2.Name" xml:space="preserve">
-    <value>uiButton2</value>
+  <data name="&gt;&gt;btnMeanImage.Name" xml:space="preserve">
+    <value>btnMeanImage</value>
   </data>
-  <data name="&gt;&gt;uiButton2.Type" xml:space="preserve">
+  <data name="&gt;&gt;btnMeanImage.Type" xml:space="preserve">
     <value>Sunny.UI.UIButton, SunnyUI, Version=3.6.6.0, Culture=neutral, PublicKeyToken=27d7d2e821d97aeb</value>
   </data>
-  <data name="&gt;&gt;uiButton2.Parent" xml:space="preserve">
-    <value>uiGroupBox1</value>
+  <data name="&gt;&gt;btnMeanImage.Parent" xml:space="preserve">
+    <value>tabPage1</value>
   </data>
-  <data name="&gt;&gt;uiButton2.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;btnMeanImage.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="uiLabel13.Font" type="System.Drawing.Font, System.Drawing">
+    <value>宋体, 12pt</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="uiLabel13.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="uiLabel13.Location" type="System.Drawing.Point, System.Drawing">
+    <value>2, 7</value>
+  </data>
+  <data name="uiLabel13.Size" type="System.Drawing.Size, System.Drawing">
+    <value>49, 23</value>
+  </data>
+  <data name="uiLabel13.TabIndex" type="System.Int32, mscorlib">
+    <value>25</value>
+  </data>
+  <data name="uiLabel13.Text" xml:space="preserve">
+    <value>系数:</value>
+  </data>
+  <data name="uiLabel13.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="&gt;&gt;uiLabel13.Name" xml:space="preserve">
+    <value>uiLabel13</value>
+  </data>
+  <data name="&gt;&gt;uiLabel13.Type" xml:space="preserve">
+    <value>Sunny.UI.UILabel, SunnyUI, Version=3.6.6.0, Culture=neutral, PublicKeyToken=27d7d2e821d97aeb</value>
+  </data>
+  <data name="&gt;&gt;uiLabel13.Parent" xml:space="preserve">
+    <value>tabPage1</value>
+  </data>
+  <data name="&gt;&gt;uiLabel13.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="btnMedianFilter.Font" type="System.Drawing.Font, System.Drawing">
+    <value>宋体, 12pt</value>
+  </data>
+  <data name="btnMedianFilter.Location" type="System.Drawing.Point, System.Drawing">
+    <value>113, 43</value>
+  </data>
+  <data name="btnMedianFilter.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>1, 1</value>
+  </data>
+  <data name="btnMedianFilter.Size" type="System.Drawing.Size, System.Drawing">
+    <value>100, 35</value>
+  </data>
+  <data name="btnMedianFilter.TabIndex" type="System.Int32, mscorlib">
+    <value>17</value>
+  </data>
+  <data name="btnMedianFilter.Text" xml:space="preserve">
+    <value>中值滤波</value>
+  </data>
+  <data name="&gt;&gt;btnMedianFilter.Name" xml:space="preserve">
+    <value>btnMedianFilter</value>
+  </data>
+  <data name="&gt;&gt;btnMedianFilter.Type" xml:space="preserve">
+    <value>Sunny.UI.UIButton, SunnyUI, Version=3.6.6.0, Culture=neutral, PublicKeyToken=27d7d2e821d97aeb</value>
+  </data>
+  <data name="&gt;&gt;btnMedianFilter.Parent" xml:space="preserve">
+    <value>tabPage1</value>
+  </data>
+  <data name="&gt;&gt;btnMedianFilter.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="btnGaussFilter.Font" type="System.Drawing.Font, System.Drawing">
+    <value>宋体, 12pt</value>
+  </data>
+  <data name="btnGaussFilter.Location" type="System.Drawing.Point, System.Drawing">
+    <value>5, 43</value>
+  </data>
+  <data name="btnGaussFilter.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>1, 1</value>
+  </data>
+  <data name="btnGaussFilter.Size" type="System.Drawing.Size, System.Drawing">
+    <value>100, 35</value>
+  </data>
+  <data name="btnGaussFilter.TabIndex" type="System.Int32, mscorlib">
+    <value>17</value>
+  </data>
+  <data name="btnGaussFilter.Text" xml:space="preserve">
+    <value>高斯滤波</value>
+  </data>
+  <data name="&gt;&gt;btnGaussFilter.Name" xml:space="preserve">
+    <value>btnGaussFilter</value>
+  </data>
+  <data name="&gt;&gt;btnGaussFilter.Type" xml:space="preserve">
+    <value>Sunny.UI.UIButton, SunnyUI, Version=3.6.6.0, Culture=neutral, PublicKeyToken=27d7d2e821d97aeb</value>
+  </data>
+  <data name="&gt;&gt;btnGaussFilter.Parent" xml:space="preserve">
+    <value>tabPage1</value>
+  </data>
+  <data name="&gt;&gt;btnGaussFilter.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="numCoefficient.Font" type="System.Drawing.Font, System.Drawing">
+    <value>宋体, 12pt</value>
+  </data>
+  <data name="numCoefficient.Location" type="System.Drawing.Point, System.Drawing">
+    <value>58, 5</value>
+  </data>
+  <data name="numCoefficient.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 5, 4, 5</value>
+  </data>
+  <data name="numCoefficient.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>100, 0</value>
+  </data>
+  <data name="numCoefficient.Size" type="System.Drawing.Size, System.Drawing">
+    <value>116, 29</value>
+  </data>
+  <data name="numCoefficient.TabIndex" type="System.Int32, mscorlib">
+    <value>24</value>
+  </data>
+  <data name="numCoefficient.Text" xml:space="preserve">
+    <value>uiDoubleUpDown3</value>
+  </data>
+  <data name="&gt;&gt;numCoefficient.Name" xml:space="preserve">
+    <value>numCoefficient</value>
+  </data>
+  <data name="&gt;&gt;numCoefficient.Type" xml:space="preserve">
+    <value>Sunny.UI.UIDoubleUpDown, SunnyUI, Version=3.6.6.0, Culture=neutral, PublicKeyToken=27d7d2e821d97aeb</value>
+  </data>
+  <data name="&gt;&gt;numCoefficient.Parent" xml:space="preserve">
+    <value>tabPage1</value>
+  </data>
+  <data name="&gt;&gt;numCoefficient.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="tabPage1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 40</value>
+  </data>
+  <data name="tabPage1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>270, 173</value>
+  </data>
+  <data name="tabPage1.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="tabPage1.Text" xml:space="preserve">
+    <value>滤波</value>
+  </data>
+  <data name="&gt;&gt;tabPage1.Name" xml:space="preserve">
+    <value>tabPage1</value>
+  </data>
+  <data name="&gt;&gt;tabPage1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tabPage1.Parent" xml:space="preserve">
+    <value>uiTabControl1</value>
+  </data>
+  <data name="&gt;&gt;tabPage1.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
   <data name="btnequ_histo.Font" type="System.Drawing.Font, System.Drawing">
     <value>宋体, 12pt</value>
   </data>
   <data name="btnequ_histo.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 76</value>
+    <value>3, 4</value>
   </data>
   <data name="btnequ_histo.MinimumSize" type="System.Drawing.Size, System.Drawing">
     <value>1, 1</value>
@@ -432,7 +493,7 @@
     <value>100, 35</value>
   </data>
   <data name="btnequ_histo.TabIndex" type="System.Int32, mscorlib">
-    <value>9</value>
+    <value>10</value>
   </data>
   <data name="btnequ_histo.Text" xml:space="preserve">
     <value>直方图均衡化</value>
@@ -444,10 +505,280 @@
     <value>Sunny.UI.UIButton, SunnyUI, Version=3.6.6.0, Culture=neutral, PublicKeyToken=27d7d2e821d97aeb</value>
   </data>
   <data name="&gt;&gt;btnequ_histo.Parent" xml:space="preserve">
-    <value>uiGroupBox1</value>
+    <value>tabPage2</value>
   </data>
   <data name="&gt;&gt;btnequ_histo.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="tabPage2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 40</value>
+  </data>
+  <data name="tabPage2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>270, 173</value>
+  </data>
+  <data name="tabPage2.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
+  </data>
+  <data name="tabPage2.Text" xml:space="preserve">
+    <value>图像增强</value>
+  </data>
+  <data name="&gt;&gt;tabPage2.Name" xml:space="preserve">
+    <value>tabPage2</value>
+  </data>
+  <data name="&gt;&gt;tabPage2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tabPage2.Parent" xml:space="preserve">
+    <value>uiTabControl1</value>
+  </data>
+  <data name="&gt;&gt;tabPage2.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="btnBinaryThreshold.Font" type="System.Drawing.Font, System.Drawing">
+    <value>宋体, 12pt</value>
+  </data>
+  <data name="btnBinaryThreshold.Location" type="System.Drawing.Point, System.Drawing">
+    <value>126, 119</value>
+  </data>
+  <data name="btnBinaryThreshold.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>1, 1</value>
+  </data>
+  <data name="btnBinaryThreshold.Size" type="System.Drawing.Size, System.Drawing">
+    <value>100, 35</value>
+  </data>
+  <data name="btnBinaryThreshold.TabIndex" type="System.Int32, mscorlib">
+    <value>22</value>
+  </data>
+  <data name="btnBinaryThreshold.Text" xml:space="preserve">
+    <value>自动二值化</value>
+  </data>
+  <data name="&gt;&gt;btnBinaryThreshold.Name" xml:space="preserve">
+    <value>btnBinaryThreshold</value>
+  </data>
+  <data name="&gt;&gt;btnBinaryThreshold.Type" xml:space="preserve">
+    <value>Sunny.UI.UIButton, SunnyUI, Version=3.6.6.0, Culture=neutral, PublicKeyToken=27d7d2e821d97aeb</value>
+  </data>
+  <data name="&gt;&gt;btnBinaryThreshold.Parent" xml:space="preserve">
+    <value>tabPage3</value>
+  </data>
+  <data name="&gt;&gt;btnBinaryThreshold.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="btnThredshold.Font" type="System.Drawing.Font, System.Drawing">
+    <value>宋体, 12pt</value>
+  </data>
+  <data name="btnThredshold.Location" type="System.Drawing.Point, System.Drawing">
+    <value>8, 119</value>
+  </data>
+  <data name="btnThredshold.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>1, 1</value>
+  </data>
+  <data name="btnThredshold.Size" type="System.Drawing.Size, System.Drawing">
+    <value>100, 35</value>
+  </data>
+  <data name="btnThredshold.TabIndex" type="System.Int32, mscorlib">
+    <value>17</value>
+  </data>
+  <data name="btnThredshold.Text" xml:space="preserve">
+    <value>二值化</value>
+  </data>
+  <data name="&gt;&gt;btnThredshold.Name" xml:space="preserve">
+    <value>btnThredshold</value>
+  </data>
+  <data name="&gt;&gt;btnThredshold.Type" xml:space="preserve">
+    <value>Sunny.UI.UIButton, SunnyUI, Version=3.6.6.0, Culture=neutral, PublicKeyToken=27d7d2e821d97aeb</value>
+  </data>
+  <data name="&gt;&gt;btnThredshold.Parent" xml:space="preserve">
+    <value>tabPage3</value>
+  </data>
+  <data name="&gt;&gt;btnThredshold.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="uiLabel14.Font" type="System.Drawing.Font, System.Drawing">
+    <value>宋体, 12pt</value>
+  </data>
+  <data name="uiLabel14.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="uiLabel14.Location" type="System.Drawing.Point, System.Drawing">
+    <value>5, 46</value>
+  </data>
+  <data name="uiLabel14.Size" type="System.Drawing.Size, System.Drawing">
+    <value>68, 23</value>
+  </data>
+  <data name="uiLabel14.TabIndex" type="System.Int32, mscorlib">
+    <value>21</value>
+  </data>
+  <data name="uiLabel14.Text" xml:space="preserve">
+    <value>最大值:</value>
+  </data>
+  <data name="uiLabel14.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="&gt;&gt;uiLabel14.Name" xml:space="preserve">
+    <value>uiLabel14</value>
+  </data>
+  <data name="&gt;&gt;uiLabel14.Type" xml:space="preserve">
+    <value>Sunny.UI.UILabel, SunnyUI, Version=3.6.6.0, Culture=neutral, PublicKeyToken=27d7d2e821d97aeb</value>
+  </data>
+  <data name="&gt;&gt;uiLabel14.Parent" xml:space="preserve">
+    <value>tabPage3</value>
+  </data>
+  <data name="&gt;&gt;uiLabel14.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="numMaxThreshold.Font" type="System.Drawing.Font, System.Drawing">
+    <value>宋体, 12pt</value>
+  </data>
+  <data name="numMaxThreshold.Location" type="System.Drawing.Point, System.Drawing">
+    <value>80, 43</value>
+  </data>
+  <data name="numMaxThreshold.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 5, 4, 5</value>
+  </data>
+  <data name="numMaxThreshold.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>100, 0</value>
+  </data>
+  <data name="numMaxThreshold.Size" type="System.Drawing.Size, System.Drawing">
+    <value>116, 29</value>
+  </data>
+  <data name="numMaxThreshold.TabIndex" type="System.Int32, mscorlib">
+    <value>20</value>
+  </data>
+  <data name="numMaxThreshold.Text" xml:space="preserve">
+    <value>uiDoubleUpDown2</value>
+  </data>
+  <data name="&gt;&gt;numMaxThreshold.Name" xml:space="preserve">
+    <value>numMaxThreshold</value>
+  </data>
+  <data name="&gt;&gt;numMaxThreshold.Type" xml:space="preserve">
+    <value>Sunny.UI.UIDoubleUpDown, SunnyUI, Version=3.6.6.0, Culture=neutral, PublicKeyToken=27d7d2e821d97aeb</value>
+  </data>
+  <data name="&gt;&gt;numMaxThreshold.Parent" xml:space="preserve">
+    <value>tabPage3</value>
+  </data>
+  <data name="&gt;&gt;numMaxThreshold.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="uiLabel15.Font" type="System.Drawing.Font, System.Drawing">
+    <value>宋体, 12pt</value>
+  </data>
+  <data name="uiLabel15.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="uiLabel15.Location" type="System.Drawing.Point, System.Drawing">
+    <value>5, 7</value>
+  </data>
+  <data name="uiLabel15.Size" type="System.Drawing.Size, System.Drawing">
+    <value>68, 23</value>
+  </data>
+  <data name="uiLabel15.TabIndex" type="System.Int32, mscorlib">
+    <value>19</value>
+  </data>
+  <data name="uiLabel15.Text" xml:space="preserve">
+    <value>最小值:</value>
+  </data>
+  <data name="uiLabel15.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="&gt;&gt;uiLabel15.Name" xml:space="preserve">
+    <value>uiLabel15</value>
+  </data>
+  <data name="&gt;&gt;uiLabel15.Type" xml:space="preserve">
+    <value>Sunny.UI.UILabel, SunnyUI, Version=3.6.6.0, Culture=neutral, PublicKeyToken=27d7d2e821d97aeb</value>
+  </data>
+  <data name="&gt;&gt;uiLabel15.Parent" xml:space="preserve">
+    <value>tabPage3</value>
+  </data>
+  <data name="&gt;&gt;uiLabel15.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="numMinThreshold.Font" type="System.Drawing.Font, System.Drawing">
+    <value>宋体, 12pt</value>
+  </data>
+  <data name="numMinThreshold.Location" type="System.Drawing.Point, System.Drawing">
+    <value>80, 4</value>
+  </data>
+  <data name="numMinThreshold.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 5, 4, 5</value>
+  </data>
+  <data name="numMinThreshold.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>100, 0</value>
+  </data>
+  <data name="numMinThreshold.Size" type="System.Drawing.Size, System.Drawing">
+    <value>116, 29</value>
+  </data>
+  <data name="numMinThreshold.TabIndex" type="System.Int32, mscorlib">
+    <value>18</value>
+  </data>
+  <data name="numMinThreshold.Text" xml:space="preserve">
+    <value>uiDoubleUpDown1</value>
+  </data>
+  <data name="&gt;&gt;numMinThreshold.Name" xml:space="preserve">
+    <value>numMinThreshold</value>
+  </data>
+  <data name="&gt;&gt;numMinThreshold.Type" xml:space="preserve">
+    <value>Sunny.UI.UIDoubleUpDown, SunnyUI, Version=3.6.6.0, Culture=neutral, PublicKeyToken=27d7d2e821d97aeb</value>
+  </data>
+  <data name="&gt;&gt;numMinThreshold.Parent" xml:space="preserve">
+    <value>tabPage3</value>
+  </data>
+  <data name="&gt;&gt;numMinThreshold.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="tabPage3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 40</value>
+  </data>
+  <data name="tabPage3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>270, 173</value>
+  </data>
+  <data name="tabPage3.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="tabPage3.Text" xml:space="preserve">
+    <value>二值化</value>
+  </data>
+  <data name="&gt;&gt;tabPage3.Name" xml:space="preserve">
+    <value>tabPage3</value>
+  </data>
+  <data name="&gt;&gt;tabPage3.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tabPage3.Parent" xml:space="preserve">
+    <value>uiTabControl1</value>
+  </data>
+  <data name="&gt;&gt;tabPage3.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="uiTabControl1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="uiTabControl1.Font" type="System.Drawing.Font, System.Drawing">
+    <value>宋体, 12pt</value>
+  </data>
+  <data name="uiTabControl1.ItemSize" type="System.Drawing.Size, System.Drawing">
+    <value>80, 40</value>
+  </data>
+  <data name="uiTabControl1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 32</value>
+  </data>
+  <data name="uiTabControl1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>270, 213</value>
+  </data>
+  <data name="uiTabControl1.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="&gt;&gt;uiTabControl1.Name" xml:space="preserve">
+    <value>uiTabControl1</value>
+  </data>
+  <data name="&gt;&gt;uiTabControl1.Type" xml:space="preserve">
+    <value>Sunny.UI.UITabControl, SunnyUI, Version=3.6.6.0, Culture=neutral, PublicKeyToken=27d7d2e821d97aeb</value>
+  </data>
+  <data name="&gt;&gt;uiTabControl1.Parent" xml:space="preserve">
+    <value>uiGroupBox1</value>
+  </data>
+  <data name="&gt;&gt;uiTabControl1.ZOrder" xml:space="preserve">
+    <value>0</value>
   </data>
   <data name="uiGroupBox1.Font" type="System.Drawing.Font, System.Drawing">
     <value>宋体, 12pt</value>
@@ -455,7 +786,6 @@
   <data name="uiGroupBox1.Location" type="System.Drawing.Point, System.Drawing">
     <value>803, 79</value>
   </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="uiGroupBox1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 5, 4, 5</value>
   </data>
@@ -466,7 +796,7 @@
     <value>0, 32, 0, 0</value>
   </data>
   <data name="uiGroupBox1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>270, 180</value>
+    <value>270, 245</value>
   </data>
   <data name="uiGroupBox1.TabIndex" type="System.Int32, mscorlib">
     <value>12</value>
@@ -490,19 +820,19 @@
     <value>宋体, 12pt</value>
   </data>
   <data name="btnFindCircle.Location" type="System.Drawing.Point, System.Drawing">
-    <value>917, 373</value>
+    <value>75, 291</value>
   </data>
   <data name="btnFindCircle.MinimumSize" type="System.Drawing.Size, System.Drawing">
     <value>1, 1</value>
   </data>
   <data name="btnFindCircle.Size" type="System.Drawing.Size, System.Drawing">
-    <value>100, 35</value>
+    <value>111, 35</value>
   </data>
   <data name="btnFindCircle.TabIndex" type="System.Int32, mscorlib">
     <value>13</value>
   </data>
   <data name="btnFindCircle.Text" xml:space="preserve">
-    <value>圆查找</value>
+    <value>圆查找ROI绘制</value>
   </data>
   <data name="&gt;&gt;btnFindCircle.Name" xml:space="preserve">
     <value>btnFindCircle</value>
@@ -511,40 +841,10 @@
     <value>Sunny.UI.UIButton, SunnyUI, Version=3.6.6.0, Culture=neutral, PublicKeyToken=27d7d2e821d97aeb</value>
   </data>
   <data name="&gt;&gt;btnFindCircle.Parent" xml:space="preserve">
-    <value>$this</value>
+    <value>uiGroupBox3</value>
   </data>
   <data name="&gt;&gt;btnFindCircle.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="btnMeasLine.Font" type="System.Drawing.Font, System.Drawing">
-    <value>宋体, 12pt</value>
-  </data>
-  <data name="btnMeasLine.Location" type="System.Drawing.Point, System.Drawing">
-    <value>802, 373</value>
-  </data>
-  <data name="btnMeasLine.MinimumSize" type="System.Drawing.Size, System.Drawing">
-    <value>1, 1</value>
-  </data>
-  <data name="btnMeasLine.Size" type="System.Drawing.Size, System.Drawing">
-    <value>100, 35</value>
-  </data>
-  <data name="btnMeasLine.TabIndex" type="System.Int32, mscorlib">
-    <value>14</value>
-  </data>
-  <data name="btnMeasLine.Text" xml:space="preserve">
-    <value>直线查找</value>
-  </data>
-  <data name="&gt;&gt;btnMeasLine.Name" xml:space="preserve">
-    <value>btnMeasLine</value>
-  </data>
-  <data name="&gt;&gt;btnMeasLine.Type" xml:space="preserve">
-    <value>Sunny.UI.UIButton, SunnyUI, Version=3.6.6.0, Culture=neutral, PublicKeyToken=27d7d2e821d97aeb</value>
-  </data>
-  <data name="&gt;&gt;btnMeasLine.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;btnMeasLine.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>13</value>
   </data>
   <data name="uiButton4.Font" type="System.Drawing.Font, System.Drawing">
     <value>宋体, 12pt</value>
@@ -670,6 +970,1014 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;uiGroupBox2.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="cmbCircleFilter.Font" type="System.Drawing.Font, System.Drawing">
+    <value>宋体, 12pt</value>
+  </data>
+  <data name="cmbCircleFilter.Items" xml:space="preserve">
+    <value>第一点</value>
+  </data>
+  <data name="cmbCircleFilter.Items1" xml:space="preserve">
+    <value>最末点</value>
+  </data>
+  <data name="cmbCircleFilter.Items2" xml:space="preserve">
+    <value>所有点</value>
+  </data>
+  <data name="cmbCircleFilter.Location" type="System.Drawing.Point, System.Drawing">
+    <value>62, 227</value>
+  </data>
+  <data name="cmbCircleFilter.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 5, 4, 5</value>
+  </data>
+  <data name="cmbCircleFilter.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>63, 0</value>
+  </data>
+  <data name="cmbCircleFilter.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 30, 2</value>
+  </data>
+  <data name="cmbCircleFilter.Size" type="System.Drawing.Size, System.Drawing">
+    <value>116, 29</value>
+  </data>
+  <data name="cmbCircleFilter.TabIndex" type="System.Int32, mscorlib">
+    <value>23</value>
+  </data>
+  <data name="cmbCircleFilter.Text" xml:space="preserve">
+    <value>第一点</value>
+  </data>
+  <data name="&gt;&gt;cmbCircleFilter.Name" xml:space="preserve">
+    <value>cmbCircleFilter</value>
+  </data>
+  <data name="&gt;&gt;cmbCircleFilter.Type" xml:space="preserve">
+    <value>Sunny.UI.UIComboBox, SunnyUI, Version=3.6.6.0, Culture=neutral, PublicKeyToken=27d7d2e821d97aeb</value>
+  </data>
+  <data name="&gt;&gt;cmbCircleFilter.Parent" xml:space="preserve">
+    <value>uiGroupBox3</value>
+  </data>
+  <data name="&gt;&gt;cmbCircleFilter.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="uiLabel6.Font" type="System.Drawing.Font, System.Drawing">
+    <value>宋体, 12pt</value>
+  </data>
+  <data name="uiLabel6.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="uiLabel6.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 230</value>
+  </data>
+  <data name="uiLabel6.Size" type="System.Drawing.Size, System.Drawing">
+    <value>49, 23</value>
+  </data>
+  <data name="uiLabel6.TabIndex" type="System.Int32, mscorlib">
+    <value>22</value>
+  </data>
+  <data name="uiLabel6.Text" xml:space="preserve">
+    <value>筛选:</value>
+  </data>
+  <data name="uiLabel6.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="&gt;&gt;uiLabel6.Name" xml:space="preserve">
+    <value>uiLabel6</value>
+  </data>
+  <data name="&gt;&gt;uiLabel6.Type" xml:space="preserve">
+    <value>Sunny.UI.UILabel, SunnyUI, Version=3.6.6.0, Culture=neutral, PublicKeyToken=27d7d2e821d97aeb</value>
+  </data>
+  <data name="&gt;&gt;uiLabel6.Parent" xml:space="preserve">
+    <value>uiGroupBox3</value>
+  </data>
+  <data name="&gt;&gt;uiLabel6.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="cmbMode.Font" type="System.Drawing.Font, System.Drawing">
+    <value>宋体, 12pt</value>
+  </data>
+  <data name="cmbMode.Items" xml:space="preserve">
+    <value>由白到黑</value>
+  </data>
+  <data name="cmbMode.Items1" xml:space="preserve">
+    <value>由黑到白</value>
+  </data>
+  <data name="cmbMode.Items2" xml:space="preserve">
+    <value>规格一致</value>
+  </data>
+  <data name="cmbMode.Items3" xml:space="preserve">
+    <value>所有信息</value>
+  </data>
+  <data name="cmbMode.Location" type="System.Drawing.Point, System.Drawing">
+    <value>62, 188</value>
+  </data>
+  <data name="cmbMode.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 5, 4, 5</value>
+  </data>
+  <data name="cmbMode.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>63, 0</value>
+  </data>
+  <data name="cmbMode.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 30, 2</value>
+  </data>
+  <data name="cmbMode.Size" type="System.Drawing.Size, System.Drawing">
+    <value>116, 29</value>
+  </data>
+  <data name="cmbMode.TabIndex" type="System.Int32, mscorlib">
+    <value>23</value>
+  </data>
+  <data name="cmbMode.Text" xml:space="preserve">
+    <value>所有信息</value>
+  </data>
+  <data name="&gt;&gt;cmbMode.Name" xml:space="preserve">
+    <value>cmbMode</value>
+  </data>
+  <data name="&gt;&gt;cmbMode.Type" xml:space="preserve">
+    <value>Sunny.UI.UIComboBox, SunnyUI, Version=3.6.6.0, Culture=neutral, PublicKeyToken=27d7d2e821d97aeb</value>
+  </data>
+  <data name="&gt;&gt;cmbMode.Parent" xml:space="preserve">
+    <value>uiGroupBox3</value>
+  </data>
+  <data name="&gt;&gt;cmbMode.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="uiLabel5.Font" type="System.Drawing.Font, System.Drawing">
+    <value>宋体, 12pt</value>
+  </data>
+  <data name="uiLabel5.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="uiLabel5.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 191</value>
+  </data>
+  <data name="uiLabel5.Size" type="System.Drawing.Size, System.Drawing">
+    <value>49, 23</value>
+  </data>
+  <data name="uiLabel5.TabIndex" type="System.Int32, mscorlib">
+    <value>22</value>
+  </data>
+  <data name="uiLabel5.Text" xml:space="preserve">
+    <value>模式:</value>
+  </data>
+  <data name="uiLabel5.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="&gt;&gt;uiLabel5.Name" xml:space="preserve">
+    <value>uiLabel5</value>
+  </data>
+  <data name="&gt;&gt;uiLabel5.Type" xml:space="preserve">
+    <value>Sunny.UI.UILabel, SunnyUI, Version=3.6.6.0, Culture=neutral, PublicKeyToken=27d7d2e821d97aeb</value>
+  </data>
+  <data name="&gt;&gt;uiLabel5.Parent" xml:space="preserve">
+    <value>uiGroupBox3</value>
+  </data>
+  <data name="&gt;&gt;uiLabel5.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="btnMeaCircle.Font" type="System.Drawing.Font, System.Drawing">
+    <value>宋体, 12pt</value>
+  </data>
+  <data name="btnMeaCircle.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1, 291</value>
+  </data>
+  <data name="btnMeaCircle.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>1, 1</value>
+  </data>
+  <data name="btnMeaCircle.Size" type="System.Drawing.Size, System.Drawing">
+    <value>72, 35</value>
+  </data>
+  <data name="btnMeaCircle.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="btnMeaCircle.Text" xml:space="preserve">
+    <value>执行</value>
+  </data>
+  <data name="&gt;&gt;btnMeaCircle.Name" xml:space="preserve">
+    <value>btnMeaCircle</value>
+  </data>
+  <data name="&gt;&gt;btnMeaCircle.Type" xml:space="preserve">
+    <value>Sunny.UI.UIButton, SunnyUI, Version=3.6.6.0, Culture=neutral, PublicKeyToken=27d7d2e821d97aeb</value>
+  </data>
+  <data name="&gt;&gt;btnMeaCircle.Parent" xml:space="preserve">
+    <value>uiGroupBox3</value>
+  </data>
+  <data name="&gt;&gt;btnMeaCircle.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="uiLabel4.Font" type="System.Drawing.Font, System.Drawing">
+    <value>宋体, 12pt</value>
+  </data>
+  <data name="uiLabel4.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="uiLabel4.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 154</value>
+  </data>
+  <data name="uiLabel4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>49, 23</value>
+  </data>
+  <data name="uiLabel4.TabIndex" type="System.Int32, mscorlib">
+    <value>21</value>
+  </data>
+  <data name="uiLabel4.Text" xml:space="preserve">
+    <value>间隔:</value>
+  </data>
+  <data name="uiLabel4.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="&gt;&gt;uiLabel4.Name" xml:space="preserve">
+    <value>uiLabel4</value>
+  </data>
+  <data name="&gt;&gt;uiLabel4.Type" xml:space="preserve">
+    <value>Sunny.UI.UILabel, SunnyUI, Version=3.6.6.0, Culture=neutral, PublicKeyToken=27d7d2e821d97aeb</value>
+  </data>
+  <data name="&gt;&gt;uiLabel4.Parent" xml:space="preserve">
+    <value>uiGroupBox3</value>
+  </data>
+  <data name="&gt;&gt;uiLabel4.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="numDis.Font" type="System.Drawing.Font, System.Drawing">
+    <value>宋体, 12pt</value>
+  </data>
+  <data name="numDis.Location" type="System.Drawing.Point, System.Drawing">
+    <value>62, 152</value>
+  </data>
+  <data name="numDis.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 5, 4, 5</value>
+  </data>
+  <data name="numDis.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>100, 0</value>
+  </data>
+  <data name="numDis.Size" type="System.Drawing.Size, System.Drawing">
+    <value>116, 29</value>
+  </data>
+  <data name="numDis.TabIndex" type="System.Int32, mscorlib">
+    <value>20</value>
+  </data>
+  <data name="numDis.Text" xml:space="preserve">
+    <value>uiDoubleUpDown3</value>
+  </data>
+  <data name="&gt;&gt;numDis.Name" xml:space="preserve">
+    <value>numDis</value>
+  </data>
+  <data name="&gt;&gt;numDis.Type" xml:space="preserve">
+    <value>Sunny.UI.UIDoubleUpDown, SunnyUI, Version=3.6.6.0, Culture=neutral, PublicKeyToken=27d7d2e821d97aeb</value>
+  </data>
+  <data name="&gt;&gt;numDis.Parent" xml:space="preserve">
+    <value>uiGroupBox3</value>
+  </data>
+  <data name="&gt;&gt;numDis.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="uiLabel3.Font" type="System.Drawing.Font, System.Drawing">
+    <value>宋体, 12pt</value>
+  </data>
+  <data name="uiLabel3.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="uiLabel3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 115</value>
+  </data>
+  <data name="uiLabel3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>49, 23</value>
+  </data>
+  <data name="uiLabel3.TabIndex" type="System.Int32, mscorlib">
+    <value>19</value>
+  </data>
+  <data name="uiLabel3.Text" xml:space="preserve">
+    <value>阈值:</value>
+  </data>
+  <data name="uiLabel3.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="&gt;&gt;uiLabel3.Name" xml:space="preserve">
+    <value>uiLabel3</value>
+  </data>
+  <data name="&gt;&gt;uiLabel3.Type" xml:space="preserve">
+    <value>Sunny.UI.UILabel, SunnyUI, Version=3.6.6.0, Culture=neutral, PublicKeyToken=27d7d2e821d97aeb</value>
+  </data>
+  <data name="&gt;&gt;uiLabel3.Parent" xml:space="preserve">
+    <value>uiGroupBox3</value>
+  </data>
+  <data name="&gt;&gt;uiLabel3.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="numThreshold.Font" type="System.Drawing.Font, System.Drawing">
+    <value>宋体, 12pt</value>
+  </data>
+  <data name="numThreshold.Location" type="System.Drawing.Point, System.Drawing">
+    <value>62, 113</value>
+  </data>
+  <data name="numThreshold.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 5, 4, 5</value>
+  </data>
+  <data name="numThreshold.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>100, 0</value>
+  </data>
+  <data name="numThreshold.Size" type="System.Drawing.Size, System.Drawing">
+    <value>116, 29</value>
+  </data>
+  <data name="numThreshold.TabIndex" type="System.Int32, mscorlib">
+    <value>18</value>
+  </data>
+  <data name="numThreshold.Text" xml:space="preserve">
+    <value>uiDoubleUpDown3</value>
+  </data>
+  <data name="&gt;&gt;numThreshold.Name" xml:space="preserve">
+    <value>numThreshold</value>
+  </data>
+  <data name="&gt;&gt;numThreshold.Type" xml:space="preserve">
+    <value>Sunny.UI.UIDoubleUpDown, SunnyUI, Version=3.6.6.0, Culture=neutral, PublicKeyToken=27d7d2e821d97aeb</value>
+  </data>
+  <data name="&gt;&gt;numThreshold.Parent" xml:space="preserve">
+    <value>uiGroupBox3</value>
+  </data>
+  <data name="&gt;&gt;numThreshold.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="uiLabel2.Font" type="System.Drawing.Font, System.Drawing">
+    <value>宋体, 12pt</value>
+  </data>
+  <data name="uiLabel2.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="uiLabel2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 76</value>
+  </data>
+  <data name="uiLabel2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>49, 23</value>
+  </data>
+  <data name="uiLabel2.TabIndex" type="System.Int32, mscorlib">
+    <value>17</value>
+  </data>
+  <data name="uiLabel2.Text" xml:space="preserve">
+    <value>宽度:</value>
+  </data>
+  <data name="uiLabel2.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="&gt;&gt;uiLabel2.Name" xml:space="preserve">
+    <value>uiLabel2</value>
+  </data>
+  <data name="&gt;&gt;uiLabel2.Type" xml:space="preserve">
+    <value>Sunny.UI.UILabel, SunnyUI, Version=3.6.6.0, Culture=neutral, PublicKeyToken=27d7d2e821d97aeb</value>
+  </data>
+  <data name="&gt;&gt;uiLabel2.Parent" xml:space="preserve">
+    <value>uiGroupBox3</value>
+  </data>
+  <data name="&gt;&gt;uiLabel2.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="numCircleWidth.Font" type="System.Drawing.Font, System.Drawing">
+    <value>宋体, 12pt</value>
+  </data>
+  <data name="numCircleWidth.Location" type="System.Drawing.Point, System.Drawing">
+    <value>62, 74</value>
+  </data>
+  <data name="numCircleWidth.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 5, 4, 5</value>
+  </data>
+  <data name="numCircleWidth.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>100, 0</value>
+  </data>
+  <data name="numCircleWidth.Size" type="System.Drawing.Size, System.Drawing">
+    <value>116, 29</value>
+  </data>
+  <data name="numCircleWidth.TabIndex" type="System.Int32, mscorlib">
+    <value>16</value>
+  </data>
+  <data name="numCircleWidth.Text" xml:space="preserve">
+    <value>uiDoubleUpDown2</value>
+  </data>
+  <data name="&gt;&gt;numCircleWidth.Name" xml:space="preserve">
+    <value>numCircleWidth</value>
+  </data>
+  <data name="&gt;&gt;numCircleWidth.Type" xml:space="preserve">
+    <value>Sunny.UI.UIDoubleUpDown, SunnyUI, Version=3.6.6.0, Culture=neutral, PublicKeyToken=27d7d2e821d97aeb</value>
+  </data>
+  <data name="&gt;&gt;numCircleWidth.Parent" xml:space="preserve">
+    <value>uiGroupBox3</value>
+  </data>
+  <data name="&gt;&gt;numCircleWidth.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="uiLabel1.Font" type="System.Drawing.Font, System.Drawing">
+    <value>宋体, 12pt</value>
+  </data>
+  <data name="uiLabel1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="uiLabel1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 37</value>
+  </data>
+  <data name="uiLabel1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>49, 23</value>
+  </data>
+  <data name="uiLabel1.TabIndex" type="System.Int32, mscorlib">
+    <value>15</value>
+  </data>
+  <data name="uiLabel1.Text" xml:space="preserve">
+    <value>高度:</value>
+  </data>
+  <data name="uiLabel1.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="&gt;&gt;uiLabel1.Name" xml:space="preserve">
+    <value>uiLabel1</value>
+  </data>
+  <data name="&gt;&gt;uiLabel1.Type" xml:space="preserve">
+    <value>Sunny.UI.UILabel, SunnyUI, Version=3.6.6.0, Culture=neutral, PublicKeyToken=27d7d2e821d97aeb</value>
+  </data>
+  <data name="&gt;&gt;uiLabel1.Parent" xml:space="preserve">
+    <value>uiGroupBox3</value>
+  </data>
+  <data name="&gt;&gt;uiLabel1.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="numCircleTall.Font" type="System.Drawing.Font, System.Drawing">
+    <value>宋体, 12pt</value>
+  </data>
+  <data name="numCircleTall.Location" type="System.Drawing.Point, System.Drawing">
+    <value>62, 35</value>
+  </data>
+  <data name="numCircleTall.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 5, 4, 5</value>
+  </data>
+  <data name="numCircleTall.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>100, 0</value>
+  </data>
+  <data name="numCircleTall.Size" type="System.Drawing.Size, System.Drawing">
+    <value>116, 29</value>
+  </data>
+  <data name="numCircleTall.TabIndex" type="System.Int32, mscorlib">
+    <value>14</value>
+  </data>
+  <data name="numCircleTall.Text" xml:space="preserve">
+    <value>uiDoubleUpDown1</value>
+  </data>
+  <data name="&gt;&gt;numCircleTall.Name" xml:space="preserve">
+    <value>numCircleTall</value>
+  </data>
+  <data name="&gt;&gt;numCircleTall.Type" xml:space="preserve">
+    <value>Sunny.UI.UIDoubleUpDown, SunnyUI, Version=3.6.6.0, Culture=neutral, PublicKeyToken=27d7d2e821d97aeb</value>
+  </data>
+  <data name="&gt;&gt;numCircleTall.Parent" xml:space="preserve">
+    <value>uiGroupBox3</value>
+  </data>
+  <data name="&gt;&gt;numCircleTall.ZOrder" xml:space="preserve">
+    <value>12</value>
+  </data>
+  <data name="uiGroupBox3.Font" type="System.Drawing.Font, System.Drawing">
+    <value>宋体, 12pt</value>
+  </data>
+  <data name="uiGroupBox3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1081, 79</value>
+  </data>
+  <data name="uiGroupBox3.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 5, 4, 5</value>
+  </data>
+  <data name="uiGroupBox3.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>1, 1</value>
+  </data>
+  <data name="uiGroupBox3.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 32, 0, 0</value>
+  </data>
+  <data name="uiGroupBox3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>189, 329</value>
+  </data>
+  <data name="uiGroupBox3.TabIndex" type="System.Int32, mscorlib">
+    <value>15</value>
+  </data>
+  <data name="uiGroupBox3.Text" xml:space="preserve">
+    <value>圆查找</value>
+  </data>
+  <data name="&gt;&gt;uiGroupBox3.Name" xml:space="preserve">
+    <value>uiGroupBox3</value>
+  </data>
+  <data name="&gt;&gt;uiGroupBox3.Type" xml:space="preserve">
+    <value>Sunny.UI.UIGroupBox, SunnyUI, Version=3.6.6.0, Culture=neutral, PublicKeyToken=27d7d2e821d97aeb</value>
+  </data>
+  <data name="&gt;&gt;uiGroupBox3.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;uiGroupBox3.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="cmbLineFilter.Font" type="System.Drawing.Font, System.Drawing">
+    <value>宋体, 12pt</value>
+  </data>
+  <data name="cmbLineFilter.Items" xml:space="preserve">
+    <value>第一点</value>
+  </data>
+  <data name="cmbLineFilter.Items1" xml:space="preserve">
+    <value>最末点</value>
+  </data>
+  <data name="cmbLineFilter.Items2" xml:space="preserve">
+    <value>所有点</value>
+  </data>
+  <data name="cmbLineFilter.Location" type="System.Drawing.Point, System.Drawing">
+    <value>62, 227</value>
+  </data>
+  <data name="cmbLineFilter.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 5, 4, 5</value>
+  </data>
+  <data name="cmbLineFilter.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>63, 0</value>
+  </data>
+  <data name="cmbLineFilter.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 30, 2</value>
+  </data>
+  <data name="cmbLineFilter.Size" type="System.Drawing.Size, System.Drawing">
+    <value>116, 29</value>
+  </data>
+  <data name="cmbLineFilter.TabIndex" type="System.Int32, mscorlib">
+    <value>23</value>
+  </data>
+  <data name="cmbLineFilter.Text" xml:space="preserve">
+    <value>第一点</value>
+  </data>
+  <data name="&gt;&gt;cmbLineFilter.Name" xml:space="preserve">
+    <value>cmbLineFilter</value>
+  </data>
+  <data name="&gt;&gt;cmbLineFilter.Type" xml:space="preserve">
+    <value>Sunny.UI.UIComboBox, SunnyUI, Version=3.6.6.0, Culture=neutral, PublicKeyToken=27d7d2e821d97aeb</value>
+  </data>
+  <data name="&gt;&gt;cmbLineFilter.Parent" xml:space="preserve">
+    <value>uiGroupBox4</value>
+  </data>
+  <data name="&gt;&gt;cmbLineFilter.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="uiLabel7.Font" type="System.Drawing.Font, System.Drawing">
+    <value>宋体, 12pt</value>
+  </data>
+  <data name="uiLabel7.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="uiLabel7.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 230</value>
+  </data>
+  <data name="uiLabel7.Size" type="System.Drawing.Size, System.Drawing">
+    <value>49, 23</value>
+  </data>
+  <data name="uiLabel7.TabIndex" type="System.Int32, mscorlib">
+    <value>22</value>
+  </data>
+  <data name="uiLabel7.Text" xml:space="preserve">
+    <value>筛选:</value>
+  </data>
+  <data name="uiLabel7.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="&gt;&gt;uiLabel7.Name" xml:space="preserve">
+    <value>uiLabel7</value>
+  </data>
+  <data name="&gt;&gt;uiLabel7.Type" xml:space="preserve">
+    <value>Sunny.UI.UILabel, SunnyUI, Version=3.6.6.0, Culture=neutral, PublicKeyToken=27d7d2e821d97aeb</value>
+  </data>
+  <data name="&gt;&gt;uiLabel7.Parent" xml:space="preserve">
+    <value>uiGroupBox4</value>
+  </data>
+  <data name="&gt;&gt;uiLabel7.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="cmbLineMode.Font" type="System.Drawing.Font, System.Drawing">
+    <value>宋体, 12pt</value>
+  </data>
+  <data name="cmbLineMode.Items" xml:space="preserve">
+    <value>由白到黑</value>
+  </data>
+  <data name="cmbLineMode.Items1" xml:space="preserve">
+    <value>由黑到白</value>
+  </data>
+  <data name="cmbLineMode.Items2" xml:space="preserve">
+    <value>规格一致</value>
+  </data>
+  <data name="cmbLineMode.Items3" xml:space="preserve">
+    <value>所有信息</value>
+  </data>
+  <data name="cmbLineMode.Location" type="System.Drawing.Point, System.Drawing">
+    <value>62, 188</value>
+  </data>
+  <data name="cmbLineMode.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 5, 4, 5</value>
+  </data>
+  <data name="cmbLineMode.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>63, 0</value>
+  </data>
+  <data name="cmbLineMode.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 30, 2</value>
+  </data>
+  <data name="cmbLineMode.Size" type="System.Drawing.Size, System.Drawing">
+    <value>116, 29</value>
+  </data>
+  <data name="cmbLineMode.TabIndex" type="System.Int32, mscorlib">
+    <value>23</value>
+  </data>
+  <data name="cmbLineMode.Text" xml:space="preserve">
+    <value>所有信息</value>
+  </data>
+  <data name="&gt;&gt;cmbLineMode.Name" xml:space="preserve">
+    <value>cmbLineMode</value>
+  </data>
+  <data name="&gt;&gt;cmbLineMode.Type" xml:space="preserve">
+    <value>Sunny.UI.UIComboBox, SunnyUI, Version=3.6.6.0, Culture=neutral, PublicKeyToken=27d7d2e821d97aeb</value>
+  </data>
+  <data name="&gt;&gt;cmbLineMode.Parent" xml:space="preserve">
+    <value>uiGroupBox4</value>
+  </data>
+  <data name="&gt;&gt;cmbLineMode.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="uiLabel8.Font" type="System.Drawing.Font, System.Drawing">
+    <value>宋体, 12pt</value>
+  </data>
+  <data name="uiLabel8.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="uiLabel8.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 191</value>
+  </data>
+  <data name="uiLabel8.Size" type="System.Drawing.Size, System.Drawing">
+    <value>49, 23</value>
+  </data>
+  <data name="uiLabel8.TabIndex" type="System.Int32, mscorlib">
+    <value>22</value>
+  </data>
+  <data name="uiLabel8.Text" xml:space="preserve">
+    <value>模式:</value>
+  </data>
+  <data name="uiLabel8.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="&gt;&gt;uiLabel8.Name" xml:space="preserve">
+    <value>uiLabel8</value>
+  </data>
+  <data name="&gt;&gt;uiLabel8.Type" xml:space="preserve">
+    <value>Sunny.UI.UILabel, SunnyUI, Version=3.6.6.0, Culture=neutral, PublicKeyToken=27d7d2e821d97aeb</value>
+  </data>
+  <data name="&gt;&gt;uiLabel8.Parent" xml:space="preserve">
+    <value>uiGroupBox4</value>
+  </data>
+  <data name="&gt;&gt;uiLabel8.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="btnMeaLine.Font" type="System.Drawing.Font, System.Drawing">
+    <value>宋体, 12pt</value>
+  </data>
+  <data name="btnMeaLine.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1, 291</value>
+  </data>
+  <data name="btnMeaLine.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>1, 1</value>
+  </data>
+  <data name="btnMeaLine.Size" type="System.Drawing.Size, System.Drawing">
+    <value>72, 35</value>
+  </data>
+  <data name="btnMeaLine.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="btnMeaLine.Text" xml:space="preserve">
+    <value>执行</value>
+  </data>
+  <data name="&gt;&gt;btnMeaLine.Name" xml:space="preserve">
+    <value>btnMeaLine</value>
+  </data>
+  <data name="&gt;&gt;btnMeaLine.Type" xml:space="preserve">
+    <value>Sunny.UI.UIButton, SunnyUI, Version=3.6.6.0, Culture=neutral, PublicKeyToken=27d7d2e821d97aeb</value>
+  </data>
+  <data name="&gt;&gt;btnMeaLine.Parent" xml:space="preserve">
+    <value>uiGroupBox4</value>
+  </data>
+  <data name="&gt;&gt;btnMeaLine.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="uiLabel9.Font" type="System.Drawing.Font, System.Drawing">
+    <value>宋体, 12pt</value>
+  </data>
+  <data name="uiLabel9.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="uiLabel9.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 154</value>
+  </data>
+  <data name="uiLabel9.Size" type="System.Drawing.Size, System.Drawing">
+    <value>49, 23</value>
+  </data>
+  <data name="uiLabel9.TabIndex" type="System.Int32, mscorlib">
+    <value>21</value>
+  </data>
+  <data name="uiLabel9.Text" xml:space="preserve">
+    <value>间隔:</value>
+  </data>
+  <data name="uiLabel9.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="&gt;&gt;uiLabel9.Name" xml:space="preserve">
+    <value>uiLabel9</value>
+  </data>
+  <data name="&gt;&gt;uiLabel9.Type" xml:space="preserve">
+    <value>Sunny.UI.UILabel, SunnyUI, Version=3.6.6.0, Culture=neutral, PublicKeyToken=27d7d2e821d97aeb</value>
+  </data>
+  <data name="&gt;&gt;uiLabel9.Parent" xml:space="preserve">
+    <value>uiGroupBox4</value>
+  </data>
+  <data name="&gt;&gt;uiLabel9.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="numLineDis.Font" type="System.Drawing.Font, System.Drawing">
+    <value>宋体, 12pt</value>
+  </data>
+  <data name="numLineDis.Location" type="System.Drawing.Point, System.Drawing">
+    <value>62, 152</value>
+  </data>
+  <data name="numLineDis.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 5, 4, 5</value>
+  </data>
+  <data name="numLineDis.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>100, 0</value>
+  </data>
+  <data name="numLineDis.Size" type="System.Drawing.Size, System.Drawing">
+    <value>116, 29</value>
+  </data>
+  <data name="numLineDis.TabIndex" type="System.Int32, mscorlib">
+    <value>20</value>
+  </data>
+  <data name="numLineDis.Text" xml:space="preserve">
+    <value>uiDoubleUpDown3</value>
+  </data>
+  <data name="&gt;&gt;numLineDis.Name" xml:space="preserve">
+    <value>numLineDis</value>
+  </data>
+  <data name="&gt;&gt;numLineDis.Type" xml:space="preserve">
+    <value>Sunny.UI.UIDoubleUpDown, SunnyUI, Version=3.6.6.0, Culture=neutral, PublicKeyToken=27d7d2e821d97aeb</value>
+  </data>
+  <data name="&gt;&gt;numLineDis.Parent" xml:space="preserve">
+    <value>uiGroupBox4</value>
+  </data>
+  <data name="&gt;&gt;numLineDis.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="uiLabel10.Font" type="System.Drawing.Font, System.Drawing">
+    <value>宋体, 12pt</value>
+  </data>
+  <data name="uiLabel10.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="uiLabel10.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 115</value>
+  </data>
+  <data name="uiLabel10.Size" type="System.Drawing.Size, System.Drawing">
+    <value>49, 23</value>
+  </data>
+  <data name="uiLabel10.TabIndex" type="System.Int32, mscorlib">
+    <value>19</value>
+  </data>
+  <data name="uiLabel10.Text" xml:space="preserve">
+    <value>阈值:</value>
+  </data>
+  <data name="uiLabel10.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="&gt;&gt;uiLabel10.Name" xml:space="preserve">
+    <value>uiLabel10</value>
+  </data>
+  <data name="&gt;&gt;uiLabel10.Type" xml:space="preserve">
+    <value>Sunny.UI.UILabel, SunnyUI, Version=3.6.6.0, Culture=neutral, PublicKeyToken=27d7d2e821d97aeb</value>
+  </data>
+  <data name="&gt;&gt;uiLabel10.Parent" xml:space="preserve">
+    <value>uiGroupBox4</value>
+  </data>
+  <data name="&gt;&gt;uiLabel10.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="numLineThreshold.Font" type="System.Drawing.Font, System.Drawing">
+    <value>宋体, 12pt</value>
+  </data>
+  <data name="numLineThreshold.Location" type="System.Drawing.Point, System.Drawing">
+    <value>62, 113</value>
+  </data>
+  <data name="numLineThreshold.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 5, 4, 5</value>
+  </data>
+  <data name="numLineThreshold.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>100, 0</value>
+  </data>
+  <data name="numLineThreshold.Size" type="System.Drawing.Size, System.Drawing">
+    <value>116, 29</value>
+  </data>
+  <data name="numLineThreshold.TabIndex" type="System.Int32, mscorlib">
+    <value>18</value>
+  </data>
+  <data name="numLineThreshold.Text" xml:space="preserve">
+    <value>uiDoubleUpDown3</value>
+  </data>
+  <data name="&gt;&gt;numLineThreshold.Name" xml:space="preserve">
+    <value>numLineThreshold</value>
+  </data>
+  <data name="&gt;&gt;numLineThreshold.Type" xml:space="preserve">
+    <value>Sunny.UI.UIDoubleUpDown, SunnyUI, Version=3.6.6.0, Culture=neutral, PublicKeyToken=27d7d2e821d97aeb</value>
+  </data>
+  <data name="&gt;&gt;numLineThreshold.Parent" xml:space="preserve">
+    <value>uiGroupBox4</value>
+  </data>
+  <data name="&gt;&gt;numLineThreshold.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="uiLabel11.Font" type="System.Drawing.Font, System.Drawing">
+    <value>宋体, 12pt</value>
+  </data>
+  <data name="uiLabel11.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="uiLabel11.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 76</value>
+  </data>
+  <data name="uiLabel11.Size" type="System.Drawing.Size, System.Drawing">
+    <value>49, 23</value>
+  </data>
+  <data name="uiLabel11.TabIndex" type="System.Int32, mscorlib">
+    <value>17</value>
+  </data>
+  <data name="uiLabel11.Text" xml:space="preserve">
+    <value>宽度:</value>
+  </data>
+  <data name="uiLabel11.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="&gt;&gt;uiLabel11.Name" xml:space="preserve">
+    <value>uiLabel11</value>
+  </data>
+  <data name="&gt;&gt;uiLabel11.Type" xml:space="preserve">
+    <value>Sunny.UI.UILabel, SunnyUI, Version=3.6.6.0, Culture=neutral, PublicKeyToken=27d7d2e821d97aeb</value>
+  </data>
+  <data name="&gt;&gt;uiLabel11.Parent" xml:space="preserve">
+    <value>uiGroupBox4</value>
+  </data>
+  <data name="&gt;&gt;uiLabel11.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="numLineWidth.Font" type="System.Drawing.Font, System.Drawing">
+    <value>宋体, 12pt</value>
+  </data>
+  <data name="numLineWidth.Location" type="System.Drawing.Point, System.Drawing">
+    <value>62, 74</value>
+  </data>
+  <data name="numLineWidth.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 5, 4, 5</value>
+  </data>
+  <data name="numLineWidth.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>100, 0</value>
+  </data>
+  <data name="numLineWidth.Size" type="System.Drawing.Size, System.Drawing">
+    <value>116, 29</value>
+  </data>
+  <data name="numLineWidth.TabIndex" type="System.Int32, mscorlib">
+    <value>16</value>
+  </data>
+  <data name="numLineWidth.Text" xml:space="preserve">
+    <value>uiDoubleUpDown2</value>
+  </data>
+  <data name="&gt;&gt;numLineWidth.Name" xml:space="preserve">
+    <value>numLineWidth</value>
+  </data>
+  <data name="&gt;&gt;numLineWidth.Type" xml:space="preserve">
+    <value>Sunny.UI.UIDoubleUpDown, SunnyUI, Version=3.6.6.0, Culture=neutral, PublicKeyToken=27d7d2e821d97aeb</value>
+  </data>
+  <data name="&gt;&gt;numLineWidth.Parent" xml:space="preserve">
+    <value>uiGroupBox4</value>
+  </data>
+  <data name="&gt;&gt;numLineWidth.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="uiLabel12.Font" type="System.Drawing.Font, System.Drawing">
+    <value>宋体, 12pt</value>
+  </data>
+  <data name="uiLabel12.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="uiLabel12.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 37</value>
+  </data>
+  <data name="uiLabel12.Size" type="System.Drawing.Size, System.Drawing">
+    <value>49, 23</value>
+  </data>
+  <data name="uiLabel12.TabIndex" type="System.Int32, mscorlib">
+    <value>15</value>
+  </data>
+  <data name="uiLabel12.Text" xml:space="preserve">
+    <value>高度:</value>
+  </data>
+  <data name="uiLabel12.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="&gt;&gt;uiLabel12.Name" xml:space="preserve">
+    <value>uiLabel12</value>
+  </data>
+  <data name="&gt;&gt;uiLabel12.Type" xml:space="preserve">
+    <value>Sunny.UI.UILabel, SunnyUI, Version=3.6.6.0, Culture=neutral, PublicKeyToken=27d7d2e821d97aeb</value>
+  </data>
+  <data name="&gt;&gt;uiLabel12.Parent" xml:space="preserve">
+    <value>uiGroupBox4</value>
+  </data>
+  <data name="&gt;&gt;uiLabel12.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="numLineTall.Font" type="System.Drawing.Font, System.Drawing">
+    <value>宋体, 12pt</value>
+  </data>
+  <data name="numLineTall.Location" type="System.Drawing.Point, System.Drawing">
+    <value>62, 35</value>
+  </data>
+  <data name="numLineTall.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 5, 4, 5</value>
+  </data>
+  <data name="numLineTall.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>100, 0</value>
+  </data>
+  <data name="numLineTall.Size" type="System.Drawing.Size, System.Drawing">
+    <value>116, 29</value>
+  </data>
+  <data name="numLineTall.TabIndex" type="System.Int32, mscorlib">
+    <value>14</value>
+  </data>
+  <data name="numLineTall.Text" xml:space="preserve">
+    <value>uiDoubleUpDown1</value>
+  </data>
+  <data name="&gt;&gt;numLineTall.Name" xml:space="preserve">
+    <value>numLineTall</value>
+  </data>
+  <data name="&gt;&gt;numLineTall.Type" xml:space="preserve">
+    <value>Sunny.UI.UIDoubleUpDown, SunnyUI, Version=3.6.6.0, Culture=neutral, PublicKeyToken=27d7d2e821d97aeb</value>
+  </data>
+  <data name="&gt;&gt;numLineTall.Parent" xml:space="preserve">
+    <value>uiGroupBox4</value>
+  </data>
+  <data name="&gt;&gt;numLineTall.ZOrder" xml:space="preserve">
+    <value>12</value>
+  </data>
+  <data name="btnWriteLineROI.Font" type="System.Drawing.Font, System.Drawing">
+    <value>宋体, 12pt</value>
+  </data>
+  <data name="btnWriteLineROI.Location" type="System.Drawing.Point, System.Drawing">
+    <value>75, 291</value>
+  </data>
+  <data name="btnWriteLineROI.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>1, 1</value>
+  </data>
+  <data name="btnWriteLineROI.Size" type="System.Drawing.Size, System.Drawing">
+    <value>111, 35</value>
+  </data>
+  <data name="btnWriteLineROI.TabIndex" type="System.Int32, mscorlib">
+    <value>13</value>
+  </data>
+  <data name="btnWriteLineROI.Text" xml:space="preserve">
+    <value>线测量ROI绘制</value>
+  </data>
+  <data name="&gt;&gt;btnWriteLineROI.Name" xml:space="preserve">
+    <value>btnWriteLineROI</value>
+  </data>
+  <data name="&gt;&gt;btnWriteLineROI.Type" xml:space="preserve">
+    <value>Sunny.UI.UIButton, SunnyUI, Version=3.6.6.0, Culture=neutral, PublicKeyToken=27d7d2e821d97aeb</value>
+  </data>
+  <data name="&gt;&gt;btnWriteLineROI.Parent" xml:space="preserve">
+    <value>uiGroupBox4</value>
+  </data>
+  <data name="&gt;&gt;btnWriteLineROI.ZOrder" xml:space="preserve">
+    <value>13</value>
+  </data>
+  <data name="uiGroupBox4.Font" type="System.Drawing.Font, System.Drawing">
+    <value>宋体, 12pt</value>
+  </data>
+  <data name="uiGroupBox4.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1278, 79</value>
+  </data>
+  <data name="uiGroupBox4.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 5, 4, 5</value>
+  </data>
+  <data name="uiGroupBox4.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>1, 1</value>
+  </data>
+  <data name="uiGroupBox4.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 32, 0, 0</value>
+  </data>
+  <data name="uiGroupBox4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>189, 329</value>
+  </data>
+  <data name="uiGroupBox4.TabIndex" type="System.Int32, mscorlib">
+    <value>16</value>
+  </data>
+  <data name="uiGroupBox4.Text" xml:space="preserve">
+    <value>直线查找</value>
+  </data>
+  <data name="&gt;&gt;uiGroupBox4.Name" xml:space="preserve">
+    <value>uiGroupBox4</value>
+  </data>
+  <data name="&gt;&gt;uiGroupBox4.Type" xml:space="preserve">
+    <value>Sunny.UI.UIGroupBox, SunnyUI, Version=3.6.6.0, Culture=neutral, PublicKeyToken=27d7d2e821d97aeb</value>
+  </data>
+  <data name="&gt;&gt;uiGroupBox4.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;uiGroupBox4.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
   <data name="imageContorl1.Location" type="System.Drawing.Point, System.Drawing">
@@ -694,13 +2002,13 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;imageContorl1.ZOrder" xml:space="preserve">
-    <value>10</value>
+    <value>9</value>
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>1081, 634</value>
+    <value>1588, 634</value>
   </data>
   <data name="$this.Font" type="System.Drawing.Font, System.Drawing">
     <value>宋体, 9pt</value>

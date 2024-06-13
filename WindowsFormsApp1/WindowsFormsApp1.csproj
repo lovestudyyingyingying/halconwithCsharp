@@ -167,6 +167,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="RParam.cs" />
     <Compile Include="DataBase\SqlSugarHelper.cs" />
     <Compile Include="DataBase\Table\Student.cs" />
     <Compile Include="Form1.cs">

@@ -21,26 +21,28 @@ using System.Data.Common;
 using System.IO;
 using static System.Windows.Forms.LinkLabel;
 using static System.Net.Mime.MediaTypeNames;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.StartPanel;
+using Sunny.UI.Win32;
 
 namespace WindowsFormsApp1
 {
     public partial class Form1 : UIForm
     {
         private HImage hImage = new HImage();
-        private HObject himgBinarization,
+        private HImage himgBinarization,
             ModelImage;
         HRegion hRegion = new HRegion();
-        HTuple myModel;
+        HShapeModel myModel = new HShapeModel();
 
         //匹配三角形
         private HTuple MatchRow1,
             MatchRow2,
             MatchCol1,
             MatchCol2;
+        HMetrologyModel MetrologyHandle = new HMetrologyModel();
 
         //找圆测量模型
-        private HTuple MetrologyHandle,
-            MetrologyRow,
+        private HTuple MetrologyRow,
             MetrologyCol,
             MetrologyRadius;
 
@@ -56,10 +58,7 @@ namespace WindowsFormsApp1
             if (File.Exists(Directory.GetCurrentDirectory() + @"/MagnetModel.shm"))
             {
                 //File.Delete(Directory.GetCurrentDirectory() + @"/MagnetModel.shm");
-                HOperatorSet.ReadShapeModel(
-                    Directory.GetCurrentDirectory() + @"/MagnetModel.shm",
-                    out myModel
-                );
+                myModel.ReadShapeModel(Directory.GetCurrentDirectory() + @"/MagnetModel.shm");
                 //MessageBox.Show("保存模板成功！");
             }
         }
@@ -75,18 +74,18 @@ namespace WindowsFormsApp1
 
         private void btnBinarization_Click(object sender, EventArgs e)
         {
-            if (!hImage.IsInitialized())
-                return;
-            HObject rgbImage = new HImage();
-            HOperatorSet.Rgb1ToGray(hImage, out rgbImage);
-            HOperatorSet.Threshold(rgbImage, out himgBinarization, 250, 255);
-            HObject hImage1;
-            // hImage =  hImage.PaintRegion(hRegion, new HTuple(255, 255, 255), "fill");
-            HOperatorSet.ReduceDomain(hImage, himgBinarization, out hImage1);
-            // 将图像设置到控件中
-            hImage = new HImage(hImage1);
-            imageContorl1.SetImage(hImage);
-            hRegion.Dispose();
+            //if (!hImage.IsInitialized())
+            //    return;
+            //HObject rgbImage = new HImage();
+            //HOperatorSet.Rgb1ToGray(hImage, out rgbImage);
+            //HOperatorSet.Threshold(rgbImage, out himgBinarization, 250, 255);
+            //HObject hImage1;
+            //// hImage =  hImage.PaintRegion(hRegion, new HTuple(255, 255, 255), "fill");
+            //HOperatorSet.ReduceDomain(hImage, himgBinarization, out hImage1);
+            //// 将图像设置到控件中
+            //hImage = new HImage(hImage1);
+            //imageContorl1.SetImage(hImage);
+            //hRegion.Dispose();
         }
 
         private void btnFitWindow_Click(object sender, EventArgs e)
@@ -100,6 +99,9 @@ namespace WindowsFormsApp1
             imageContorl1.SetImage(hImage);
         }
 
+        /// <summary>
+        /// halcon区域类型，表示一部分区域
+        /// </summary>
         HRegion regionAff = new HRegion();
 
         private void uiButton5_Click(object sender, EventArgs e)
@@ -110,11 +112,6 @@ namespace WindowsFormsApp1
 
         private void uiButton6_Click(object sender, EventArgs e)
         {
-            //HHomMat2D hHomMat2D = new HHomMat2D();
-            //hHomMat2D= hHomMat2D.HomMat2dTranslate(new HTuple(100), 100);
-            //regionAff = hHomMat2D.AffineTransRegion(regionAff, "nearest_neighbor");
-            //imageContorl1.DisplayRegoin(regionAff);
-
             //根据计算的矩阵变换
             HHomMat2D hHomMat2D = new HHomMat2D();
             hHomMat2D.VectorAngleToRigid(
@@ -148,82 +145,219 @@ namespace WindowsFormsApp1
             );
         }
 
-        private void btnFindCircle_Click_1(object sender, EventArgs e)
-        {
-            HTuple Parameter = new HTuple();
-            HObject ResultContour = null;
-            HOperatorSet.ApplyMetrologyModel(hImage, MetrologyHandle);
-            HOperatorSet.GetMetrologyObjectResult(
-                MetrologyHandle,
-                "all",
-                "all",
-                "result_type",
-                "all_param",
-                out HTuple CircleResult
-            );
-            HOperatorSet.GenEmptyObj(out ResultContour);
-            ResultContour.Dispose();
-            HOperatorSet.GetMetrologyObjectResultContour(
-                out ResultContour,
-                MetrologyHandle,
-                "all",
-                "all",
-                1
-            );
+        private void Form1_Load(object sender, EventArgs e) { }
 
-            double CenterX = 0,
-                CenterY = 0,
-                Radius = 0;
-            if (CircleResult.TupleLength() >= 3)
-            {
-                CenterY = Math.Round(CircleResult[0].D, 4);
-                CenterX = Math.Round(CircleResult[1].D, 4);
-                Radius = Math.Round(CircleResult[2].D, 4);
-            }
-
-            //显示图像及轮廓
-            UIMessageBox.ShowSuccess($"圆查找成功！X:{CenterX},Y:{CenterY},半径:{Radius}");
-            imageContorl1.SetImage(hImage);
-            imageContorl1.DisplayRegoin(ResultContour);
-        }
-
-        private void btnMeasLine_Click(object sender, EventArgs e)
+        private void MeaCircle()
         {
             HMetrologyModel MetroModel = new HMetrologyModel();
+            HTuple CircleResult;
+            try
+            {
+                HTuple Circle_Info = new HTuple(new double[] { centerRow, centerCol, radius });
+                MetroModel.AddMetrologyObjectGeneric(
+                    new HTuple("circle"),
+                    Circle_Info,
+                    new HTuple(numCircleTall.Value),
+                    new HTuple(numCircleWidth.Value),
+                    new HTuple(1),
+                    new HTuple(numThreshold.Value),
+                    new HTuple("measure_transition", "measure_select", "measure_distance"),
+                    new HTuple(
+                        RParam.SetMeasModel(cmbMode.Text),
+                        RParam.SetMeasSelect(cmbCircleFilter.Text),
+                        numDis.Value
+                    )
+                );
+                MetroModel.ApplyMetrologyModel(hImage);
+                var outXld = MetroModel.GetMetrologyObjectMeasures(
+                    "all",
+                    "all",
+                    out HTuple outR,
+                    out HTuple outC
+                );
+                CircleResult = MetroModel.GetMetrologyObjectResult(
+                    new HTuple("all"),
+                    new HTuple("all"),
+                    new HTuple("result_type"),
+                    new HTuple("all_param")
+                );
+                if (CircleResult.TupleLength() >= 3)
+                {
+                    var centerY = Math.Round(CircleResult[0].D, 4);
+                    var centerX = Math.Round(CircleResult[1].D, 4);
+                    var radius1 = Math.Round(CircleResult[2].D, 4);
+                    UIMessageBox.Show($"sucess！Y:{centerY},X:{centerX},Radius:{radius1}");
+                    //绘制结果圆
+                    HOperatorSet.GenCircleContourXld(
+                        out HObject ResultXLD,
+                        centerY,
+                        centerX,
+                        radius1,
+                        0,
+                        6.28318,
+                        "positive",
+                        1
+                    );
+                    imageContorl1.DisplayRegoin(ResultXLD);
+                    //绘制结果点
+                    HOperatorSet.GenCrossContourXld(
+                        out HObject MeasCross,
+                        outR,
+                        outC,
+                        5,
+                        new HTuple(45).TupleRad()
+                    );
+                    imageContorl1.DisplayRegoin(MeasCross);
+                }
+                imageContorl1.DisplayRegoin(outXld);
+            }
+            catch (Exception ee)
+            {
+                UIMessageBox.ShowError(ee.Message);
+            }
+        }
 
-            imageContorl1.DrawLine(out lineRow1, out lineCol1, out lineRow2, out lineCol2); //画直线
-            HTuple lineInfo = (new HTuple(new double[] { lineRow1, lineCol1, lineRow2, lineCol2 }));
-            //降低直线拟合的最低得分
-            MetroModel.AddMetrologyObjectGeneric(
-                new HTuple("line"), // 参数1: 对象类型 ("line" 表示线)
-                lineInfo, // 参数2: 几何参数 (如起点和终点坐标)
-                new HTuple(20), //搜索宽度，匹配框有多宽
-                new HTuple(10), // 搜索框的间隔，*有效搜索高度
-                new HTuple(1), //滤波 (filter) 用于控制边缘检测的滤波
-                new HTuple(10), // 边缘阈值
-                new HTuple("measure_transition", "measure_select", "measure_distance"), // 参数7: 测量控制参数 (例如测量转换、测量选择等)
-                new HTuple("all", "first", 10) // 参数8: 测量控制参数的值 (对应参数7中指定的控制参数) 从黑到白，从白到黑，所有之类， 边缘选择， distance,搜索的间距
-            );
+        HTuple centerRow;
+        HTuple centerCol;
+        HTuple radius;
 
-            MetroModel.SetMetrologyObjectParam(0, "min_score", 0.1);
-            /// 分数阈值
-            MetroModel.ApplyMetrologyModel(hImage);
-            var outXld = MetroModel.GetMetrologyObjectMeasures(
-                "all",
-                "all",
-                out HTuple outR,
-                out HTuple outC
-            );
-            var lineResult = MetroModel.GetMetrologyObjectResult(
-                new HTuple("all"),
-                new HTuple("all"),
-                new HTuple("result_type"),
-                new HTuple("all_param")
-            );
-            var result = MetroModel.GetMetrologyObjectResultContour("all", "all", 1.5);
+        private void btnMeaCircle_Click(object sender, EventArgs e)
+        {
+            if (imageContorl1.hDrawingObject.IsInitialized())
+            {
+                var doubleArr = imageContorl1.hDrawingObject
+                    .GetDrawingObjectParams(new HTuple("row", "column", "radius"))
+                    .DArr;
+                centerRow = doubleArr[0];
+                centerCol = doubleArr[1];
+                radius = doubleArr[2];
+                imageContorl1.SetImage(hImage);
+                MeaCircle();
+                imageContorl1.hDrawingObject.ClearDrawingObject();
+            }
+        }
+
+        private void btnWriteLineROI_Click(object sender, EventArgs e)
+        {
+            imageContorl1.DrawROI(RoiType.Line);
+        }
+
+        private void uiButton2_Click(object sender, EventArgs e) { }
+
+        private void btnGaussFilter_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                hImage = hImage.GaussFilter((int)numCoefficient.Value);
+                imageContorl1.SetImage(hImage);
+            }
+            catch (Exception ex)
+            {
+                UIMessageBox.ShowError(ex.Message);
+            }
+        }
+
+        private void btnMedianFilter_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                hImage = hImage.MedianImage("circle",(int)numCoefficient.Value,"mirrored");
+                imageContorl1.SetImage(hImage);
+            }
+            catch (Exception ex)
+            {
+                UIMessageBox.ShowError(ex.Message);
+            }
+        }
+
+        private void btnMeanImage_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                hImage = hImage.MeanImage((int)numCoefficient.Value, (int)numCoefficient.Value);
+                imageContorl1.SetImage(hImage);
+            }
+            catch (Exception ex)
+            {
+                UIMessageBox.ShowError(ex.Message);
+            }
+        }
+
+        private void btnThredshold_Click(object sender, EventArgs e)
+        {
+            hImage.GetImageSize(out HTuple width, out HTuple height);
+            hImage = hImage.Threshold(numMinThreshold.Value, numMaxThreshold.Value).RegionToBin(255, 0, width, height);
             imageContorl1.SetImage(hImage);
-            imageContorl1.DisplayRegoin(result);
-            imageContorl1.DisplayRegoin(outXld);
+
+        }
+
+        private void btnBinaryThreshold_Click(object sender, EventArgs e)
+        {
+            hImage.GetImageSize(out HTuple width, out HTuple height);
+
+            hImage = hImage.BinaryThreshold("max_separability","light",out HTuple usedThreshold).RegionToBin(255, 0, width, height);
+            imageContorl1.SetImage(hImage);
+
+        }
+
+        private void btnMeaLine_Click(object sender, EventArgs e)
+        {
+            if (imageContorl1.hDrawingObject.IsInitialized())
+            {
+                try
+                {
+                    HMetrologyModel MetroModel = new HMetrologyModel();
+
+                    var lineInfo = imageContorl1.hDrawingObject.GetDrawingObjectParams(
+                        new HTuple("row1", "column1", "row2", "column2")
+                    );
+                    MetroModel.AddMetrologyObjectGeneric(
+                        new HTuple("line"), // 参数1: 对象类型 ("line" 表示线)
+                        lineInfo, // 参数2: 几何参数 (如起点和终点坐标)
+                        new HTuple(numLineTall.Value), //搜索框高度
+                        new HTuple(numLineWidth.Value), // 搜索框宽度
+                        new HTuple(1), //滤波 (filter) 用于控制边缘检测的滤波
+                        new HTuple(numLineThreshold.Value), // 边缘阈值
+                        new HTuple("measure_transition", "measure_select", "measure_distance"), // 参数7: 测量控制参数 (例如测量转换、测量选择等)
+                        new HTuple(
+                            RParam.SetMeasModel(cmbLineMode.Text),
+                            RParam.SetMeasSelect(cmbLineFilter.Text),
+                            10
+                        ) // 参数8: 测量控制参数的值 (对应参数7中指定的控制参数) 从黑到白，从白到黑，所有之类， 边缘选择， distance,搜索的间距
+                    );
+
+                    MetroModel.SetMetrologyObjectParam(0, "min_score", 0.1);
+                    /// 分数阈值
+                    MetroModel.ApplyMetrologyModel(hImage);
+                    var outXld = MetroModel.GetMetrologyObjectMeasures(
+                        "all",
+                        "all",
+                        out HTuple outR, //点
+                        out HTuple outC
+                    );
+                    var lineResult = MetroModel.GetMetrologyObjectResult(
+                        new HTuple("all"),
+                        new HTuple("all"),
+                        new HTuple("result_type"),
+                        new HTuple("all_param")
+                    );
+                    var result = MetroModel.GetMetrologyObjectResultContour("all", "all", 1.5);
+                    imageContorl1.SetImage(hImage);
+                    imageContorl1.DisplayRegoin(result);
+                    imageContorl1.DisplayRegoin(outXld);
+                    imageContorl1.hDrawingObject.ClearDrawingObject();
+                }
+                catch (Exception ee)
+                {
+                    UIMessageBox.Show(ee.Message);
+                }
+            }
+        }
+
+        private void btnFindCircle_Click(object sender, EventArgs e)
+        {
+            imageContorl1.DrawROI();
+            // MeaCircle();
         }
 
         private void btnFindModel_Click(object sender, EventArgs e)
@@ -235,13 +369,10 @@ namespace WindowsFormsApp1
         {
             if (!hRegion.IsInitialized())
                 return;
-            HObject ModelImages,
-                ModelRegions;
-            HOperatorSet.ReduceDomain(hImage, hRegion, out ModelImage);
+            ModelImage = hImage.ReduceDomain(hRegion);
+            //HOperatorSet.InspectShapeModel(ModelImage, out ModelImages, out ModelRegions, 4, 20);
 
-            HOperatorSet.InspectShapeModel(ModelImage, out ModelImages, out ModelRegions, 4, 20);
-
-            HOperatorSet.CreateShapeModel(
+            myModel.CreateShapeModel(
                 ModelImage,
                 "auto",
                 0,
@@ -250,8 +381,7 @@ namespace WindowsFormsApp1
                 "auto",
                 "use_polarity",
                 "auto",
-                "auto",
-                out myModel
+                "auto"
             );
             FindModel();
             GC.Collect();
@@ -259,25 +389,25 @@ namespace WindowsFormsApp1
 
         private void btndymicBinarization_Click(object sender, EventArgs e)
         {
-            if (!hImage.IsInitialized())
-                return;
-            HObject rgbImage = new HImage();
-            HOperatorSet.Rgb1ToGray(hImage, out rgbImage);
-            HOperatorSet.BinaryThreshold(
-                rgbImage,
-                out himgBinarization,
-                "max_separability",
-                "light",
-                out HTuple usedThreshold
-            );
-            HRegion hRegion = new HRegion(himgBinarization);
-            HObject hImage1 = new HImage();
-            // hImage =  hImage.PaintRegion(hRegion, new HTuple(255, 255, 255), "fill");
-            HOperatorSet.ReduceDomain(rgbImage, hRegion, out hImage1);
-            // 将图像设置到控件中
-            hImage = new HImage(hImage1);
-            imageContorl1.SetImage(hImage);
-            hRegion.Dispose();
+            //if (!hImage.IsInitialized())
+            //    return;
+            //HObject rgbImage = new HImage();
+            //HOperatorSet.Rgb1ToGray(hImage, out rgbImage);
+            //HOperatorSet.BinaryThreshold(
+            //    rgbImage,
+            //    out himgBinarization,
+            //    "max_separability",
+            //    "light",
+            //    out HTuple usedThreshold
+            //);
+            //HRegion hRegion = new HRegion(himgBinarization);
+            //HObject hImage1 = new HImage();
+            //// hImage =  hImage.PaintRegion(hRegion, new HTuple(255, 255, 255), "fill");
+            //HOperatorSet.ReduceDomain(rgbImage, hRegion, out hImage1);
+            //// 将图像设置到控件中
+            //hImage = new HImage(hImage1);
+            //imageContorl1.SetImage(hImage);
+            //hRegion.Dispose();
         }
 
         private void btnSaveModel_Click(object sender, EventArgs e)
@@ -311,83 +441,7 @@ namespace WindowsFormsApp1
 
         private void btnRoiCircle_Click(object sender, EventArgs e) { }
 
-        private void uiButton1_Click(object sender, EventArgs e)
-        {
-            imageContorl1.DrawROI(
-                RoiType.Circle,
-                out MetrologyRow,
-                out MetrologyCol,
-                out MetrologyRadius
-            );
-            HOperatorSet.CreateMetrologyModel(out MetrologyHandle);
-            HTuple Circle1Param = null,
-                Circle2Param = null,
-                Circle1Index,
-                Circle2Index;
-            Circle1Param = new HTuple();
-            Circle1Param = Circle1Param.TupleConcat(MetrologyRow);
-            Circle1Param = Circle1Param.TupleConcat(MetrologyCol);
-            Circle1Param = Circle1Param.TupleConcat(MetrologyRadius - 5);
-
-            Circle2Param = new HTuple();
-            Circle2Param = Circle2Param.TupleConcat(MetrologyRow);
-            Circle2Param = Circle2Param.TupleConcat(MetrologyCol);
-            Circle2Param = Circle2Param.TupleConcat(MetrologyRadius + 5);
-            HOperatorSet.AddMetrologyObjectGeneric(
-                MetrologyHandle,
-                "circle",
-                Circle1Param,
-                20,
-                5,
-                1,
-                30,
-                new HTuple(),
-                new HTuple(),
-                out Circle1Index
-            );
-            HOperatorSet.AddMetrologyObjectGeneric(
-                MetrologyHandle,
-                "circle",
-                Circle2Param,
-                20,
-                5,
-                1,
-                30,
-                new HTuple(),
-                new HTuple(),
-                out Circle2Index
-            );
-
-            //获取测量模型里的模型轮廓
-            HObject ModelContour;
-            HOperatorSet.GenEmptyObj(out ModelContour);
-            ModelContour.Dispose();
-            HOperatorSet.GetMetrologyObjectModelContour(
-                out ModelContour,
-                MetrologyHandle,
-                "all",
-                1.5
-            );
-
-            //获取测量模型里的测量区域
-            HObject MeasureContour;
-            HOperatorSet.GenEmptyObj(out MeasureContour);
-            MeasureContour.Dispose();
-
-            HTuple Row = null,
-                Column = null;
-            HOperatorSet.GetMetrologyObjectMeasures(
-                out MeasureContour,
-                MetrologyHandle,
-                Circle1Index.TupleConcat(Circle2Index),
-                "all",
-                out Row,
-                out Column
-            );
-
-            imageContorl1.DisplayRegoin(ModelContour);
-            imageContorl1.DisplayRegoin(MeasureContour);
-        }
+        private void uiButton1_Click(object sender, EventArgs e) { }
 
         public void FindModel()
         {
@@ -395,11 +449,10 @@ namespace WindowsFormsApp1
                 col,
                 angle,
                 score = new HTuple();
-            HObject ModelContours;
+            HXLDCont ModelContours;
             // 在图像中找到形状模型
-            HOperatorSet.FindShapeModel(
+            myModel.FindShapeModel(
                 hImage,
-                myModel,
                 0,
                 (new HTuple(360)).TupleRad(),
                 0.5,
@@ -418,7 +471,7 @@ namespace WindowsFormsApp1
             {
                 // 获取并显示形状模型的轮廓
 
-                HOperatorSet.GetShapeModelContours(out ModelContours, myModel, 1);
+                ModelContours = myModel.GetShapeModelContours(1);
 
                 HOperatorSet.GenRectangle1(
                     out HObject rectangle,

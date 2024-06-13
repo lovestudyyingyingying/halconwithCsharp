@@ -20,8 +20,20 @@ namespace WindowsFormsApp1
         {
             InitializeComponent();
             CreateHalconWindow();
+            var timer = new Timer();
+            timer.Tick += Timer_Tick;
+            timer.Enabled = true;
         }
 
+        private void Timer_Tick(object sender, EventArgs e)
+        {
+            if (hDrawingObject.IsInitialized())
+                isCanMoveImage = false;
+            else
+                isCanMoveImage = true;
+        }
+
+        private bool isCanMoveImage=true;
         //缩放图像
         private void hWindowControl1_HMouseWheel(object sender, HMouseEventArgs e)
         {
@@ -79,7 +91,6 @@ namespace WindowsFormsApp1
             ColDown = Column; //鼠标按下时的列坐标
         }
 
-       
         //鼠标移动，实时显示当前坐标与灰度值
         private void hWindowControl1_HMouseMove(object sender, HMouseEventArgs e)
         {
@@ -110,6 +121,8 @@ namespace WindowsFormsApp1
                 //在label控件上显示数值
                 if (e.Button == MouseButtons.Left)
                 {
+                    if (!isCanMoveImage)
+                        return;
                     HTuple row1,
                         col1,
                         row2,
@@ -141,7 +154,6 @@ namespace WindowsFormsApp1
                         MessageBox.Show("请加载一张图片");
                     }
                     PaintCross();
-
                 }
             }
             catch (HOperatorException) { }
@@ -149,7 +161,7 @@ namespace WindowsFormsApp1
 
         HImage hImage = new HImage();
         HRegion hRegion = new HRegion();
-
+      public  HDrawingObject hDrawingObject = new HDrawingObject();
         HTuple WindowID,
             ImageWidth,
             ImageHeight;
@@ -170,6 +182,7 @@ namespace WindowsFormsApp1
         private ToolStripMenuItem blnCross_strip;
 
         private ToolStripMenuItem histogram_strip;
+
         public void CreateHalconWindow()
         {
             // ///图片控件为winform中的PictureBox控件时/
@@ -191,22 +204,25 @@ namespace WindowsFormsApp1
                 //barVisible_strip.CheckedChanged += barVisible_strip_CheckedChanged;
                 blnCross_strip = new ToolStripMenuItem("显示隐藏十字");
                 blnCross_strip.CheckOnClick = true;
-                blnCross_strip.Click += (obj, sender) => { PaintCross(); };
-                        //saveImg_strip = new ToolStripMenuItem("保存原始图像");
-                        //saveImg_strip.Click += delegate
-                        //{
-                        //    SaveImage();
-                        //};
-                        //saveWindow_strip = new ToolStripMenuItem("保存缩略图像");
-                        //saveWindow_strip.Click += delegate
-                        //{
-                        //    SaveWindowDump();
-                        //};
-                        histogram_strip = new ToolStripMenuItem("显示直方图(H)");
+                blnCross_strip.Click += (obj, sender) =>
+                {
+                    PaintCross();
+                };
+                //saveImg_strip = new ToolStripMenuItem("保存原始图像");
+                //saveImg_strip.Click += delegate
+                //{
+                //    SaveImage();
+                //};
+                //saveWindow_strip = new ToolStripMenuItem("保存缩略图像");
+                //saveWindow_strip.Click += delegate
+                //{
+                //    SaveWindowDump();
+                //};
+                histogram_strip = new ToolStripMenuItem("显示直方图(H)");
                 histogram_strip.CheckOnClick = true;
                 histogram_strip.Checked = false;
                 hv_MenuStrip = new ContextMenuStrip();
-               // hv_MenuStrip.Items.Add(fit_strip);
+                // hv_MenuStrip.Items.Add(fit_strip);
                 //hv_MenuStrip.Items.Add(barVisible_strip);
                 hv_MenuStrip.Items.Add(blnCross_strip);
                 //hv_MenuStrip.Items.Add(new ToolStripSeparator());
@@ -218,28 +234,53 @@ namespace WindowsFormsApp1
                 //saveImg_strip.Enabled = false;
                 //saveWindow_strip.Enabled = false;
                 hWindowControl1.ContextMenuStrip = hv_MenuStrip;
-
-
             }
         }
+
         private void PaintCross()
         {
             if (blnCross_strip.Checked)
             {
                 HXLDCont hXLDCont = new HXLDCont();
                 hWindowControl1.HalconWindow.SetColor("green");
-                HRegion regions = new HRegion((HTuple)0, (HTuple)0, (HTuple)ImageHeight, (HTuple)ImageWidth);
+                HRegion regions = new HRegion(
+                    (HTuple)0,
+                    (HTuple)0,
+                    (HTuple)ImageHeight,
+                    (HTuple)ImageWidth
+                );
                 HOperatorSet.AreaCenter(regions, out var _, out var row, out var column);
                 row = ImageHeight / 2;
                 column = ImageWidth / 2;
                 hWindowControl1.HalconWindow.DispLine(row - 5, column, row + 5, column);
                 hWindowControl1.HalconWindow.DispLine(row, column - 5, row, column + 5);
-                hWindowControl1.HalconWindow.DispLine((double)row, (double)column + 50.0, (double)row, (double)column * 2.0);
-                hWindowControl1.HalconWindow.DispLine((double)row, 0.0, (double)row, (double)column - 50.0);
-                hWindowControl1.HalconWindow.DispLine(0.0, (double)column, (double)row - 50.0, (double)column);
-                hWindowControl1.HalconWindow.DispLine((double)row + 50.0, (double)column, (double)row * 2.0, (double)column);
+                hWindowControl1.HalconWindow.DispLine(
+                    (double)row,
+                    (double)column + 50.0,
+                    (double)row,
+                    (double)column * 2.0
+                );
+                hWindowControl1.HalconWindow.DispLine(
+                    (double)row,
+                    0.0,
+                    (double)row,
+                    (double)column - 50.0
+                );
+                hWindowControl1.HalconWindow.DispLine(
+                    0.0,
+                    (double)column,
+                    (double)row - 50.0,
+                    (double)column
+                );
+                hWindowControl1.HalconWindow.DispLine(
+                    (double)row + 50.0,
+                    (double)column,
+                    (double)row * 2.0,
+                    (double)column
+                );
             }
         }
+
         public void SetImage(HImage hImage)
         {
             this.hImage = hImage;
@@ -261,66 +302,74 @@ namespace WindowsFormsApp1
         {
             regeionList.Clear();
             hWindowControl1.HalconWindow.SetColor("red");
-            HTuple win_Width, win_Height, win_Col, win_Row, cwin_Width, cwin_Height;
+            HTuple win_Width,
+                win_Height,
+                win_Col,
+                win_Row,
+                cwin_Width,
+                cwin_Height;
             HOperatorSet.ClearWindow(WindowID);
-            HOperatorSet.GetImageSize(hImage, out ImageWidth, out ImageHeight );//获取图片大小规格
-            HOperatorSet.GetWindowExtents(WindowID, out win_Row, out win_Col, out win_Width, out win_Height);//获取窗体大小规格
-            cwin_Height = 1.0 * win_Height / win_Width * ImageWidth;//宽不变计算高          
-            if (cwin_Height > ImageHeight)//宽不变高能容纳
+            HOperatorSet.GetImageSize(hImage, out ImageWidth, out ImageHeight); //获取图片大小规格
+            HOperatorSet.GetWindowExtents(
+                WindowID,
+                out win_Row,
+                out win_Col,
+                out win_Width,
+                out win_Height
+            ); //获取窗体大小规格
+            cwin_Height = 1.0 * win_Height / win_Width * ImageWidth; //宽不变计算高
+            if (cwin_Height > ImageHeight) //宽不变高能容纳
             {
                 cwin_Height = 1.0 * (cwin_Height - ImageHeight) / 2;
-                HOperatorSet.SetPart(WindowID, -cwin_Height, 0, cwin_Height + ImageHeight, ImageWidth);//设置窗体的规格
+                HOperatorSet.SetPart(
+                    WindowID,
+                    -cwin_Height,
+                    0,
+                    cwin_Height + ImageHeight,
+                    ImageWidth
+                ); //设置窗体的规格
             }
-            else//高不变宽能容纳
+            else //高不变宽能容纳
             {
-                cwin_Width = 1.0 * win_Width / win_Height * ImageHeight;//高不变计算宽
+                cwin_Width = 1.0 * win_Width / win_Height * ImageHeight; //高不变计算宽
                 cwin_Width = 1.0 * (cwin_Width - ImageWidth) / 2;
-                HOperatorSet.SetPart(WindowID, 0, -cwin_Width, ImageHeight, cwin_Width + ImageWidth);//设置窗体的规格
+                HOperatorSet.SetPart(
+                    WindowID,
+                    0,
+                    -cwin_Width,
+                    ImageHeight,
+                    cwin_Width + ImageWidth
+                ); //设置窗体的规格
             }
-            HOperatorSet.DispObj(hImage, WindowID);//显示图片
+            HOperatorSet.DispObj(hImage, WindowID); //显示图片
         }
 
         private void ImageContorl_Load(object sender, EventArgs e) { }
 
-        public HRegion DrawROI(RoiType roiType)
+        public void DrawROI(RoiType roiType)
         {
-            //DisplayImage();
-            HTuple ROI_row1,
-                ROI_column1,
-                ROI_row2,
-                ROI_column2,
-                circle_radius = new HTuple();
-            // hWindowControl1.Focus();
+          
             switch (roiType)
             {
                 case RoiType.Retangle:
-                    HOperatorSet.DrawRectangle1(
-                        hWindowControl1.HalconWindow,
-                        out ROI_row1,
-                        out ROI_column1,
-                        out ROI_row2,
-                        out ROI_column2
-                    );
-                    //HRegion ROI = new HRegion();
-                    hRegion.GenRectangle1(ROI_row1, ROI_column1, ROI_row2, ROI_column2);
+                    hDrawingObject.CreateDrawingObjectRectangle1(100, 100, 200,200);
+                    //将绘图对象关联到Halcon窗口
+                    hWindowControl1.HalconWindow.AttachDrawingObjectToWindow(hDrawingObject);
+
                     break;
                 case RoiType.Circle:
-                    HOperatorSet.DrawCircle(
-                        WindowID,
-                        out ROI_row1,
-                        out ROI_column1,
-                        out circle_radius
-                    );
-                    hRegion.GenCircle(ROI_row1, ROI_column1, circle_radius);
+                    hDrawingObject.CreateDrawingObjectCircle(100, 100, 20);
+                    //将绘图对象关联到Halcon窗口
+                    hWindowControl1.HalconWindow.AttachDrawingObjectToWindow(hDrawingObject);
+                    break;
+                case RoiType.Line:
+                    hDrawingObject.CreateDrawingObjectLine(100,100,100,200);
+                    //将绘图对象关联到Halcon窗口
+                    hWindowControl1.HalconWindow.AttachDrawingObjectToWindow(hDrawingObject);
                     break;
                 default:
                     break;
             }
-
-            hWindowControl1.HalconWindow.SetColor("red");
-            HOperatorSet.SetDraw(hWindowControl1.HalconWindow, "margin");
-            DisplayRegoin(hRegion);
-            return hRegion;
         }
 
         public HRegion DrawROI(
@@ -427,24 +476,31 @@ namespace WindowsFormsApp1
             return hRegion;
         }
 
-        public void DrawLine(out double row1,out double col1,out double row2,out double col2)
+        public void DrawLine(out double row1, out double col1, out double row2, out double col2)
         {
-            hWindowControl1.HalconWindow.DrawLine(out row1 ,out col1,out row2,out col2 );
+            hWindowControl1.HalconWindow.DrawLine(out row1, out col1, out row2, out col2);
             HOperatorSet.GenRegionLine(out HObject regionLines, row1, col1, row2, col2);
             DisplayRegoin(regionLines);
-
         }
+
         public void DisplayRegoin(HObject hregions)
         {
             regeionList.Add(hregions);
             HOperatorSet.DispObj(hregions, WindowID);
         }
-       
+
+        public void DrawROI()
+        {
+            hDrawingObject.CreateDrawingObjectCircle(100, 100, 20);
+            //将绘图对象关联到Halcon窗口
+            hWindowControl1.HalconWindow.AttachDrawingObjectToWindow(hDrawingObject);
+        }
     }
 
     public enum RoiType
     {
         Retangle,
-        Circle
+        Circle,
+        Line
     }
 }
